@@ -1,0 +1,524 @@
+[
+  {
+    "@id": "http://xmlns.com/foaf/0.1/Person",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "_:Na33d714d57b74395bb7c03a26855a949",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/title",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "_:N61e138eeccd943f9a87a53b12aaae282",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "_:N20954e1d1014480c8ba44944a2f3c35e",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N686fd37688a642a49d3ffabc31e4b7ab"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Nf9afbbdf0dae47a586c9bd992d118501"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fabio/Journal",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "_:Nc91f7bc7a84f414a80bee1adef9c7dac",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7c237714c2ae42d68ccbec6c6ac7f515",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N56d2471ba4b143c1a1add2b0c8ae48c2"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/date",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "_:N70af154ff36b4602894584f785e13005",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/rights",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "_:Nf9afbbdf0dae47a586c9bd992d118501",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7580f7eaad9c4078a20a6f29e97c22ac",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/hasMeasure"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne52216b409da47cb927e5e7fac3e7f19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N3977ad8c7d474c8dbbe3840a321488b3"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N7580f7eaad9c4078a20a6f29e97c22ac"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncc63d2e6a9a646adbaa5b87ebcd882ff",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N432abc43e41f4733b66cd599718b2202"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N61e138eeccd943f9a87a53b12aaae282"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido-standard-bibliometric-measures",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/elements/1.1/creator": [
+      {
+        "@value": "Enrico Motta"
+      },
+      {
+        "@value": "Francesco Osborne"
+      },
+      {
+        "@value": "Silvio Peroni"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/date": [
+      {
+        "@value": "2015-07-15"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@language": "en",
+        "@value": "This module of BiDO describes a list of possible bibliometric measures tha can be used to define bibliometric data of publication-related entities, e.g.: h-index, e-index, journal impact factor, author citation count."
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/rights": [
+      {
+        "@value": "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)."
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures) describes a list of possible bibliometric measures tha can be used to define bibliometric data of publication-related entities.\n\n**URL:** http://purl.org/spar/bido-standard-bibliometric-measures\n\n**Creators**: [Enrico Motta](https://orcid.org/0000-0003-0015-1952), [Francesco Osborne](https://orcid.org/0000-0001-6557-3131), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)\n\n**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)\n\n**Website:** http://www.sparontologies.net/ontologies/bido\n\n**Cite as:** Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Proceedings of the 4th Workshop on Linked Science (LISC 2014): 24–35. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "BiDO-Standard-Bibliometric-Measures"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#imports": [
+      {
+        "@id": "http://purl.org/spar/bido-core"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#priorVersion": [
+      {
+        "@id": "https://svn.code.sf.net/p/sempublishing/code/BiDO/bido-sbm-2014-07-14_1-0.owl"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "http://purl.org/spar/bido-standard-bibliometric-measures/2015-07-15"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "1.1"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf69dc65087764d34aa655923e9f21d58",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/hasMeasure"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/journal-impact-factor",
+    "@type": [
+      "http://purl.org/spar/bido/BibliometricMeasure",
+      {
+        "@id": "_:N14e2dc3217a842e3abb05b0056a73050"
+      },
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The impact factor of an academic journal is a measure reflecting the average number of citations to recent articles published in the journal. It is frequently used as a proxy for the relative importance of a journal within its field, with journals with higher impact factors deemed to be more important than those with lower ones."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-standard-bibliometric-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "journal impact factor"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "_:N14e2dc3217a842e3abb05b0056a73050",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Ncc63d2e6a9a646adbaa5b87ebcd882ff"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N1bd04432125142cdb6e2e693dc35ea30"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfb0159879a5e45459100f2d4f7cf2bbb",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N20954e1d1014480c8ba44944a2f3c35e"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Nb8eee8bed84f4b8288aa300f61c0b76c"
+      }
+    ]
+  },
+  {
+    "@id": "_:N686fd37688a642a49d3ffabc31e4b7ab",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N70af154ff36b4602894584f785e13005"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/BibliometricMeasure",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "_:N3977ad8c7d474c8dbbe3840a321488b3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N970bdfe978b2493ea70570930193c969"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Na33d714d57b74395bb7c03a26855a949"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/hasMeasure",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "_:Nccca6176ccc640808f32d575c17d6dde",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:N7c237714c2ae42d68ccbec6c6ac7f515"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Neb7ba0f01b6f45c8b48f7518a67b34c8"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/e-index",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/BibliometricMeasure",
+      {
+        "@id": "_:Nfb0159879a5e45459100f2d4f7cf2bbb"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The e-index is aimed at considering the contributions of excess citations, which are mainly from highly cited papers. It is a necessary h-index complement, especially for evaluating highly cited scientists or for precisely comparing the scientific output of a group of scientists having an identical h-index."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-standard-bibliometric-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "e-index"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf2627f73fd674a47835306c42e44875e",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#Thing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/h-index",
+    "@type": [
+      {
+        "@id": "_:Ne52216b409da47cb927e5e7fac3e7f19"
+      },
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/BibliometricMeasure"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The h-index is an index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist's most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-standard-bibliometric-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "h-index"
+      }
+    ]
+  },
+  {
+    "@id": "_:N432abc43e41f4733b66cd599718b2202",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/fabio/Journal"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Nf2627f73fd674a47835306c42e44875e"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/withBibliometricData",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "_:Neb7ba0f01b6f45c8b48f7518a67b34c8",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/withBibliometricData"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/bido/author-citation-count",
+    "@type": [
+      {
+        "@id": "_:Nd356cd7f59024a3281db6fd8cb7242c6"
+      },
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/BibliometricMeasure"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "It is the count of all the citation received by all the papers of a certain author."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-standard-bibliometric-measures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "author citation count"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd356cd7f59024a3281db6fd8cb7242c6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Nccca6176ccc640808f32d575c17d6dde"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Nf69dc65087764d34aa655923e9f21d58"
+      }
+    ]
+  },
+  {
+    "@id": "_:N970bdfe978b2493ea70570930193c969",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Nc91f7bc7a84f414a80bee1adef9c7dac"
+      }
+    ]
+  },
+  {
+    "@id": "_:N56d2471ba4b143c1a1add2b0c8ae48c2",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1bd04432125142cdb6e2e693dc35ea30",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/hasMeasure"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb8eee8bed84f4b8288aa300f61c0b76c",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/hasMeasure"
+      }
+    ]
+  }
+]

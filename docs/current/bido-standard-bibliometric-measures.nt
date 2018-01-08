@@ -1,0 +1,98 @@
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/elements/1.1/creator> "Enrico Motta" .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/elements/1.1/date> "2015-07-15" .
+_:Nf9afbbdf0dae47a586c9bd992d118501 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:N970bdfe978b2493ea70570930193c969 <http://www.w3.org/2002/07/owl#onProperty> _:Nc91f7bc7a84f414a80bee1adef9c7dac .
+_:N20954e1d1014480c8ba44944a2f3c35e <http://www.w3.org/2002/07/owl#onProperty> _:Nf9afbbdf0dae47a586c9bd992d118501 .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:Nd356cd7f59024a3281db6fd8cb7242c6 .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/elements/1.1/creator> "Silvio Peroni" .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Nfb0159879a5e45459100f2d4f7cf2bbb <http://www.w3.org/2002/07/owl#allValuesFrom> _:N20954e1d1014480c8ba44944a2f3c35e .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-standard-bibliometric-measures> .
+_:Neb7ba0f01b6f45c8b48f7518a67b34c8 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:N20954e1d1014480c8ba44944a2f3c35e <http://www.w3.org/2002/07/owl#allValuesFrom> _:N686fd37688a642a49d3ffabc31e4b7ab .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://www.w3.org/2000/01/rdf-schema#label> "BiDO-Standard-Bibliometric-Measures" .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/spar/bido-standard-bibliometric-measures/2015-07-15> .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-standard-bibliometric-measures> .
+_:Nd356cd7f59024a3281db6fd8cb7242c6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://www.w3.org/2000/01/rdf-schema#comment> "The BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures) describes a list of possible bibliometric measures tha can be used to define bibliometric data of publication-related entities.\n\n**URL:** http://purl.org/spar/bido-standard-bibliometric-measures\n\n**Creators**: [Enrico Motta](https://orcid.org/0000-0003-0015-1952), [Francesco Osborne](https://orcid.org/0000-0001-6557-3131), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)\n\n**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)\n\n**Website:** http://www.sparontologies.net/ontologies/bido\n\n**Cite as:** Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Proceedings of the 4th Workshop on Linked Science (LISC 2014): 24\u201335. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf" .
+_:N432abc43e41f4733b66cd599718b2202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Ncc63d2e6a9a646adbaa5b87ebcd882ff <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N686fd37688a642a49d3ffabc31e4b7ab <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/hasMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:Ne52216b409da47cb927e5e7fac3e7f19 .
+_:Nd356cd7f59024a3281db6fd8cb7242c6 <http://www.w3.org/2002/07/owl#onProperty> _:Nf69dc65087764d34aa655923e9f21d58 .
+_:N970bdfe978b2493ea70570930193c969 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
+_:N7c237714c2ae42d68ccbec6c6ac7f515 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/fabio/Journal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N686fd37688a642a49d3ffabc31e4b7ab <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
+_:N56d2471ba4b143c1a1add2b0c8ae48c2 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the count of all the citation received by all the papers of a certain author." .
+_:Nd356cd7f59024a3281db6fd8cb7242c6 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nccca6176ccc640808f32d575c17d6dde .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/2000/01/rdf-schema#label> "h-index" .
+<http://purl.org/spar/bido/BibliometricMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N686fd37688a642a49d3ffabc31e4b7ab <http://www.w3.org/2002/07/owl#onProperty> _:N70af154ff36b4602894584f785e13005 .
+_:N432abc43e41f4733b66cd599718b2202 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Journal> .
+_:Nf2627f73fd674a47835306c42e44875e <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N14e2dc3217a842e3abb05b0056a73050 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Ncc63d2e6a9a646adbaa5b87ebcd882ff .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N7580f7eaad9c4078a20a6f29e97c22ac <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)." .
+_:Nfb0159879a5e45459100f2d4f7cf2bbb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N61e138eeccd943f9a87a53b12aaae282 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:Nccca6176ccc640808f32d575c17d6dde <http://www.w3.org/2002/07/owl#onProperty> _:Neb7ba0f01b6f45c8b48f7518a67b34c8 .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/2000/01/rdf-schema#label> "e-index" .
+_:N3977ad8c7d474c8dbbe3840a321488b3 <http://www.w3.org/2002/07/owl#onProperty> _:Na33d714d57b74395bb7c03a26855a949 .
+_:N3977ad8c7d474c8dbbe3840a321488b3 <http://www.w3.org/2002/07/owl#allValuesFrom> _:N970bdfe978b2493ea70570930193c969 .
+_:N3977ad8c7d474c8dbbe3840a321488b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N7c237714c2ae42d68ccbec6c6ac7f515 <http://www.w3.org/2002/07/owl#onProperty> _:N56d2471ba4b143c1a1add2b0c8ae48c2 .
+_:N7c237714c2ae42d68ccbec6c6ac7f515 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
+_:Na33d714d57b74395bb7c03a26855a949 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/2000/01/rdf-schema#comment> "The h-index is an index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist's most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal." .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://www.w3.org/2002/07/owl#priorVersion> <https://svn.code.sf.net/p/sempublishing/code/BiDO/bido-sbm-2014-07-14_1-0.owl> .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/2000/01/rdf-schema#comment> "The e-index is aimed at considering the contributions of excess citations, which are mainly from highly cited papers. It is a necessary h-index complement, especially for evaluating highly cited scientists or for precisely comparing the scientific output of a group of scientists having an identical h-index." .
+_:N1bd04432125142cdb6e2e693dc35ea30 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:N970bdfe978b2493ea70570930193c969 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/holdsBibliometricDataInTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N14e2dc3217a842e3abb05b0056a73050 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N432abc43e41f4733b66cd599718b2202 <http://www.w3.org/2002/07/owl#onProperty> _:Nf2627f73fd674a47835306c42e44875e .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:Nfb0159879a5e45459100f2d4f7cf2bbb .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N70af154ff36b4602894584f785e13005 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:Ne52216b409da47cb927e5e7fac3e7f19 <http://www.w3.org/2002/07/owl#allValuesFrom> _:N3977ad8c7d474c8dbbe3840a321488b3 .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-standard-bibliometric-measures> .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Ne52216b409da47cb927e5e7fac3e7f19 <http://www.w3.org/2002/07/owl#onProperty> _:N7580f7eaad9c4078a20a6f29e97c22ac .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:N14e2dc3217a842e3abb05b0056a73050 .
+<http://purl.org/spar/bido/withBibliometricData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nccca6176ccc640808f32d575c17d6dde <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/elements/1.1/description> "This module of BiDO describes a list of possible bibliometric measures tha can be used to define bibliometric data of publication-related entities, e.g.: h-index, e-index, journal impact factor, author citation count."@en .
+_:Ncc63d2e6a9a646adbaa5b87ebcd882ff <http://www.w3.org/2002/07/owl#allValuesFrom> _:N432abc43e41f4733b66cd599718b2202 .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/2000/01/rdf-schema#label> "author citation count" .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+_:Nf69dc65087764d34aa655923e9f21d58 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:Nb8eee8bed84f4b8288aa300f61c0b76c <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:N14e2dc3217a842e3abb05b0056a73050 <http://www.w3.org/2002/07/owl#onProperty> _:N1bd04432125142cdb6e2e693dc35ea30 .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/2000/01/rdf-schema#comment> "The impact factor of an academic journal is a measure reflecting the average number of citations to recent articles published in the journal. It is frequently used as a proxy for the relative importance of a journal within its field, with journals with higher impact factors deemed to be more important than those with lower ones." .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-standard-bibliometric-measures> .
+_:Nccca6176ccc640808f32d575c17d6dde <http://www.w3.org/2002/07/owl#allValuesFrom> _:N7c237714c2ae42d68ccbec6c6ac7f515 .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/2000/01/rdf-schema#label> "journal impact factor" .
+_:Ncc63d2e6a9a646adbaa5b87ebcd882ff <http://www.w3.org/2002/07/owl#onProperty> _:N61e138eeccd943f9a87a53b12aaae282 .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/spar/bido-core> .
+_:Nc91f7bc7a84f414a80bee1adef9c7dac <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:N20954e1d1014480c8ba44944a2f3c35e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/elements/1.1/creator> "Francesco Osborne" .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/elements/1.1/title> "BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures)" .
+_:Nfb0159879a5e45459100f2d4f7cf2bbb <http://www.w3.org/2002/07/owl#onProperty> _:Nb8eee8bed84f4b8288aa300f61c0b76c .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:Ne52216b409da47cb927e5e7fac3e7f19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+
