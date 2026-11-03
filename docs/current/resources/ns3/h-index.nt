@@ -1,20 +1,20 @@
-_:n6448d373a1214cfe8486f42ba14c87abb13 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb18 .
-_:n6448d373a1214cfe8486f42ba14c87abb17 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
-<http://purl.org/spar/bido/h-index> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:n6448d373a1214cfe8486f42ba14c87abb13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:n6448d373a1214cfe8486f42ba14c87abb14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/bido/h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
-_:n6448d373a1214cfe8486f42ba14c87abb18 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:na33f427d47174a8182f83607fdca09b9b18 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:na33f427d47174a8182f83607fdca09b9b15 <http://www.w3.org/2002/07/owl#onProperty> _:na33f427d47174a8182f83607fdca09b9b16 .
 <http://purl.org/spar/bido/h-index> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-standard-bibliometric-measures/> .
-<http://purl.org/spar/bido/h-index> <http://www.w3.org/2000/01/rdf-schema#comment> "An index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist's most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal." .
-_:n6448d373a1214cfe8486f42ba14c87abb15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
-_:n6448d373a1214cfe8486f42ba14c87abb15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:n6448d373a1214cfe8486f42ba14c87abb16 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
-<http://purl.org/spar/bido/h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:n6448d373a1214cfe8486f42ba14c87abb13 .
-_:n6448d373a1214cfe8486f42ba14c87abb13 <http://www.w3.org/2002/07/owl#allValuesFrom> _:n6448d373a1214cfe8486f42ba14c87abb14 .
-_:n6448d373a1214cfe8486f42ba14c87abb14 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb17 .
-_:n6448d373a1214cfe8486f42ba14c87abb14 <http://www.w3.org/2002/07/owl#allValuesFrom> _:n6448d373a1214cfe8486f42ba14c87abb15 .
-_:n6448d373a1214cfe8486f42ba14c87abb15 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb16 .
-<http://purl.org/spar/bido/h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/spar/bido/h-index> <http://purl.org/vocab/vann/example> "\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:h-index ;\n        bido:hasNumericValue \"8\"^^xsd:integer .\n    " .
 <http://purl.org/spar/bido/h-index> <http://www.w3.org/2000/01/rdf-schema#label> "h-index" .
+_:na33f427d47174a8182f83607fdca09b9b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/h-index> <http://purl.org/vocab/vann/example> "\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:h-index ;\n        bido:hasNumericValue \"8\"^^xsd:integer .\n    " .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:na33f427d47174a8182f83607fdca09b9b13 <http://www.w3.org/2002/07/owl#allValuesFrom> _:na33f427d47174a8182f83607fdca09b9b14 .
+_:na33f427d47174a8182f83607fdca09b9b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+_:na33f427d47174a8182f83607fdca09b9b14 <http://www.w3.org/2002/07/owl#allValuesFrom> _:na33f427d47174a8182f83607fdca09b9b15 .
+_:na33f427d47174a8182f83607fdca09b9b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:na33f427d47174a8182f83607fdca09b9b16 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:na33f427d47174a8182f83607fdca09b9b13 .
+_:na33f427d47174a8182f83607fdca09b9b17 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:na33f427d47174a8182f83607fdca09b9b14 <http://www.w3.org/2002/07/owl#onProperty> _:na33f427d47174a8182f83607fdca09b9b17 .
+_:na33f427d47174a8182f83607fdca09b9b15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
+_:na33f427d47174a8182f83607fdca09b9b13 <http://www.w3.org/2002/07/owl#onProperty> _:na33f427d47174a8182f83607fdca09b9b18 .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/2000/01/rdf-schema#comment> "An index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist's most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal." .
