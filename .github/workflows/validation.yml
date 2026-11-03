@@ -1,0 +1,11 @@
+name: Ontology Validation
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate:
+    uses: SPAROntologies/sparontologies.github.io/.github/workflows/validation.yml@master

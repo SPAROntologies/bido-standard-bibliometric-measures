@@ -36,73 +36,44 @@ dc:title a owl:AnnotationProperty .
     dc:creator "Enrico Motta (https://orcid.org/0000-0003-0015-1952)",
         "Francesco Osborne (https://orcid.org/0000-0001-6557-3131)",
         "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)" ;
-    dc:date "2026-09-13" ;
+    dc:date "2026-10-05" ;
     dc:description """
-This module of BiDO describes a list of possible bibliometric measures tha can be used to define bibliometric data of publication-related entities, e.g.: h-index, e-index, journal impact factor, author citation count.
+This module of BiDO describes a list of possible bibliometric measures that can be used to define bibliometric data of publication-related entities, e.g.: h-index, e-index, journal impact factor, author citation count.
 
 ![The architecture of the BiDO-Standard-Bibliometric-Measures module.](bido-standard-bibliometric-measures.png)
 
 """@en ;
-    dc:title "BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures)" ;
+    dc:title "The BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures)" ;
     dcterms:bibliographicCitation "Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Proceedings of the 4th Workshop on Linked Science (LISC 2014): 24–35. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf" ;
     dcterms:created "2015-07-15" ;
     dcterms:issued "2015-07-15" ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-09-13" ;
+    dcterms:modified "2026-10-05" ;
     dcterms:publisher <https://ror.org/00wb4mk85> ;
     dcterms:source <https://github.com/SPAROntologies/bido/blob/master/docs/cq.md> ;
     bibo:doi "https://doi.org/10.25504/FAIRsharing.d7f0a9" ;
     bibo:status <http://purl.org/ontology/bibo/status/published> ;
-    vann:changes """
-* **v1.1.1**: Added new documentation, including annotation properties (e.g., `bibo:doi`, `schema:codeRepository`, etc.), term properties (e.g., `vann:example`, `vs:term_status`, etc.), exemplary competency questions with their respective SPARQL queries, and a Grafoo diagram.
-* **v1.1.2**: Fixed `tvc:atTime` range, adding `time:TemporalEntity`.
-    """@en ;
+    vann:changes <https://github.com/SPAROntologies/bido-standard-bibliometric-measures/blob/master/CHANGELOG.md> ;
     vann:preferredNamespacePrefix "bido"@en ;
     vann:preferredNamespaceUri "http://purl.org/spar/bido"@en ;
     rdfs:seeAlso <http://www.sparontologies.net/ontologies/bido> ;
-    owl:backwardCompatibleWith :2026-08-14 ;
+    owl:backwardCompatibleWith :2026-09-13 ;
     owl:imports <http://purl.org/spar/bido-core> ;
-    owl:priorVersion :2026-08-14 ;
-    owl:versionIRI :2026-09-13 ;
-    owl:versionInfo "1.1.1"^^xsd:string ;
-    foaf:logo <https://github.com/SPAROntologies/bido/blob/master/spar.png> ;
+    owl:priorVersion :2026-09-13 ;
+    owl:versionIRI :2026-10-05 ;
+    owl:versionInfo "1.1.3"^^xsd:string ;
+    foaf:logo <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> ;
     schema:codeRepository <https://github.com/SPAROntologies/bido> ;
-    schema:includedInDataCatalog <https://fairsharing.org/> .
-
-bido:CategorialBibliometricData a owl:Class ;
-    rdfs:label "categorial bibliometric data"@en ;
-    vann:example """
-    :my-person a foaf:Person ;
-        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .
-
-    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
-        bido:accordingTo :my-organization ;
-        bido:withBibliometricData :my-categorial-bibliometric-data .
-
-    :my-categorial-bibliometric-data a bido:CategorialBibliometricData .
-    """ ;
-    rdfs:comment "Categorical information that characterises publication-related entities from a bibliometric point of view."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
-    rdfs:subClassOf bido:BibliometricData,
-        skos:Concept ;
-    vs:term_status reg:statusStable .
-
-bido:accordingTo a owl:ObjectProperty ;
-    rdfs:label "according to"@en ;
-    vann:example """
-    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
-        bido:accordingTo :my-organization ;
-        bido:withBibliometricData :my-numeric-bibliometric-data .
-
-    :my-organization a prov:Agent .
-    """ ;
-    rdfs:comment "The relation between a bibliometric data in time situation and an agent who provided such data."@en ;
-    rdfs:domain bido:BibliometricDataInTime ;
-    rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
-    rdfs:range prov:Agent ;
-    rdfs:subPropertyOf tvc:withinContext,
-        prov:wasAttributedTo ;
-    vs:term_status reg:statusStable .
+    schema:includedInDataCatalog <https://fairsharing.org/> ;
+    dc:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+    schema:keywords 
+        "SPAR Ontologies"@en ,
+        "Semantic Publishing and Referencing Ontologies"@en ,
+        "bibliometrics"@en,
+        "bibliometric measures"@en,
+        "scholarly publishing"@en,
+        "scientometrics"@en,
+        "semantic publishing"@en .
 
 bido:author-citation-count a [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
@@ -190,47 +161,6 @@ owl:Thing a owl:Class .
 
 owl:versionInfo a owl:AnnotationProperty .
 
-<http://purl.org/spar/bido-core> a owl:Ontology ;
-    rdfs:label "BiDO Core module (BiDO-Core)"@en ;
-    dc:contributor "Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)"^^xsd:string ;
-    dc:creator "Enrico Motta (https://orcid.org/0000-0003-0015-1952)"^^xsd:string,
-        "Francesco Osborne (https://orcid.org/0000-0001-6557-3131)"^^xsd:string,
-        "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)"^^xsd:string ;
-    dc:date "2026-08-14" ;
-    dc:description """
-The core module of BiDO allows us to describe any entity and the related bibliometric data (through the property `bido:holdsBibliometricDataInTime`) at a certain time (i.e., `tvc:atTime`, a property defined by the imported TVC ontology for specifying temporal instants or intervals) and according to a certain agent (through the property `bido:accordingTo`, which is a sub-property of `prov:wasAttributedTo` and allows us to indicate the agent responsible for such bibliometric data).
-
-![The architecture of the BiDO-Core module.](bido-core.png)
-
-Two alternative kinds of bibliometric data are specifiable (through the property `bido:withBibliometricData`) in BiDO: numeric data and categorial data. 
-Numeric data are those characterised by a certain integer or float value related to a particular bibliometric measure. 
-Some of these measures – i.e., h-index, author citation count, e-index, and journal impact factor – are available in a particular module of BiDO responsible for describing the most common bibliometric measures.
-"""@en ;
-    dc:title "BiDO Core module (BiDO-Core)"@en ;
-    dcterms:bibliographicCitation "Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Proceedings of the 4th Workshop on Linked Science (LISC 2014): 24–35. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf" ;
-    dcterms:created "2015-07-14" ;
-    dcterms:issued "2015-07-14" ;
-    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-08-14" ;
-    dcterms:publisher <https://ror.org/00wb4mk85> ;
-    dcterms:source <https://github.com/SPAROntologies/bido/blob/master/docs/cq.md> ;
-    bibo:doi "https://doi.org/10.25504/FAIRsharing.d7f0a9" ;
-    bibo:status <http://purl.org/ontology/bibo/status/published> ;
-    vann:changes """
-* **v1.2.1**: Added new documentation, including annotation properties (e.g., `bibo:doi`, `schema:codeRepository`, etc.), term properties (e.g., `vann:example`, `vs:term_status`, etc.), exemplary competency questions with their respective SPARQL queries, and a Grafoo diagram.
-    """@en ;
-    vann:preferredNamespacePrefix "bido"@en ;
-    vann:preferredNamespaceUri "http://purl.org/spar/bido"@en ;
-    rdfs:seeAlso <http://www.sparontologies.net/ontologies/bido> ;
-    owl:backwardCompatibleWith <http://purl.org/spar/bido-core/2018-07-13> ;
-    owl:imports <http://purl.org/spar/tvc> ;
-    owl:priorVersion <http://purl.org/spar/bido-core/2018-07-13> ;
-    owl:versionIRI <http://purl.org/spar/bido-core/2026-08-14> ;
-    owl:versionInfo "1.2.1"^^xsd:string ;
-    foaf:logo <https://github.com/SPAROntologies/bido/blob/master/spar.png> ;
-    schema:codeRepository <https://github.com/SPAROntologies/bido> ;
-    schema:includedInDataCatalog <https://fairsharing.org/> .
-
 fabio:Journal a owl:Class ;
     rdfs:label "journal"@en ;
     rdfs:comment "A scholarly periodical primarily devoted to the publication of original research papers."@en ;
@@ -272,36 +202,6 @@ prov:wasAttributedTo a owl:ObjectProperty ;
     rdfs:isDefinedBy prov: ;
     rdfs:range prov:Agent .
 
-bido:NumericBibliometricData a owl:Class ;
-    rdfs:label "numeric bibliometric data"@en ;
-    vann:example """
-    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
-        bido:hasMeasure bido:journal-impact-factor ;
-        bido:hasNumericValue "2.464"^^xsd:float .
-    """ ;
-    rdfs:comment "Bibliometric data represented by numbers. Such numeric data are those characterised by a certain integer or float value related to a particular bibliometric measure."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty bido:hasMeasure ],
-        [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty bido:hasNumericValue ],
-        [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty bido:hasNumericValue ],
-        [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty bido:hasMeasure ],
-        [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty bido:hasNumericValue ],
-        [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty bido:hasMeasure ],
-        bido:BibliometricData ;
-    vs:term_status reg:statusStable .
-
 tvc:withValue a owl:ObjectProperty ;
     rdfs:label "with value"@en ;
     rdfs:comment "The relation between the value in time situation and the actual value held by the entity partaking in that situation."@en ;
@@ -318,55 +218,6 @@ prov:Agent a owl:Class ;
     rdfs:comment "Something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity."@en ;
     rdfs:isDefinedBy prov: .
 
-bido:BibliometricData a owl:Class ;
-    rdfs:label "bibliometric data"@en ;
-    vann:example """
-    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
-        bido:accordingTo :my-organization ;
-        bido:withBibliometricData :my-bibliometric-data .
-
-    :my-bibliometric-data a bido:BibliometricData .
-    """ ;
-    rdfs:comment "Any kind of bibliometric data. In particular, they are organised according two sub-concepts: numeric data and categorial data."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
-    vs:term_status reg:statusStable .
-
-bido:BibliometricDataInTime a owl:Class ;
-    rdfs:label "bibliometric data in time"@en ;
-    vann:example """
-    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
-        tvc:atTime :my-time-interval ;
-        bido:accordingTo :my-organization ;
-        bido:withBibliometricData :my-bibliometric-data .
-    """ ;
-    rdfs:comment "A particular situation that describes a bibliometric data a person, an article, or any other publication-related entity may have, that can be restricted to a particular time interval."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom bido:BibliometricMeasure ;
-            owl:onProperty tvc:withValue ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom time:Interval ;
-            owl:onProperty tvc:atTime ],
-        tvc:ValueInTime ;
-    vs:term_status reg:statusStable .
-
-bido:hasNumericValue a owl:DatatypeProperty ;
-    rdfs:label "has numeric value"@en ;
-    vann:example """
-    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
-        bido:hasNumericValue "2.464"^^xsd:float .
-    """ ;
-    rdfs:comment "The actual value of the bibliometric data in consideration."@en ;
-    rdfs:domain bido:NumericBibliometricData ;
-    rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
-    rdfs:range [ a rdfs:Datatype ;
-            owl:unionOf ( xsd:float xsd:integer ) ],
-        [ a rdfs:Datatype ;
-            owl:unionOf ( xsd:float xsd:integer ) ],
-        [ a rdfs:Datatype ;
-            owl:unionOf ( xsd:float xsd:integer ) ] ;
-    vs:term_status reg:statusStable .
-
 xsd:float a rdfs:Datatype .
 
 xsd:integer a rdfs:Datatype .
@@ -376,68 +227,8 @@ foaf:Person a owl:Class ;
     rdfs:comment "A person."@en ;
     rdfs:isDefinedBy foaf: .
 
-bido:holdsBibliometricDataInTime a owl:ObjectProperty ;
-    rdfs:label "holds bibliometric data in time"@en ;
-    vann:example """
-    :my-journal a fabio:Journal ;
-        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .
-
-    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
-        bido:accordingTo :my-organization ;
-        bido:withBibliometricData :my-numeric-bibliometric-data .
-    """ ;
-    rdfs:comment "The relation between a person or any other publication-related entity and bibliometric data that the entity holds."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
-    rdfs:range bido:BibliometricDataInTime ;
-    rdfs:subPropertyOf tvc:hasValue ;
-    vs:term_status reg:statusStable ;
-    skos:note """
-The ontology permits one to specify the time period over which a bibliometric data is held, and the other contextual entities responsible for having provided such bibliometric data.
-    """@en .
-
-bido:withBibliometricData a owl:ObjectProperty ;
-    rdfs:label "with bibliometric data"@en ;
-    vann:example """
-    :my-journal a fabio:Journal ;
-        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .
-
-    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
-        bido:accordingTo :my-organization ;
-        bido:withBibliometricData :my-numeric-bibliometric-data .
-    """ ;
-    rdfs:comment "The relation between an entity's bibliometric data in time and a definition of the type of bibliometric data held by this entity."@en ;
-    rdfs:domain bido:BibliometricDataInTime ;
-    rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
-    rdfs:range bido:BibliometricData ;
-    rdfs:subPropertyOf tvc:withValue ;
-    vs:term_status reg:statusStable .
-
 tvc:ValueInTime a owl:Class ;
     rdfs:label "value in time"@en ;
     rdfs:comment "A particular kind of time-indexed situation that represents a hub linking the entity having a particular value, the value itself and the temporal and contextual extents from which the entity-value relationship depends."@en ;
     rdfs:isDefinedBy <http://purl.org/spar/tvc/> .
-
-bido:BibliometricMeasure a owl:Class ;
-    rdfs:label "bibliometric measure"@en ;
-    vann:example """
-    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
-        bido:hasMeasure bido:journal-impact-factor .
-
-    bido:journal-impact-factor a bido:BibliometricMeasure .
-    """ ;
-    rdfs:comment "Any kind of measure related with a bibliometric data (e.g., h-index, e-index, journal impact factor)."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
-    vs:term_status reg:statusStable .
-
-bido:hasMeasure a owl:ObjectProperty ;
-    rdfs:label "has measure"@en ;
-    vann:example """
-    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
-        bido:hasMeasure bido:journal-impact-factor .
-    """ ;
-    rdfs:comment "The relation between some bibliometric data and a measure (e.g., h-index, e-index, journal impact factor)."@en ;
-    rdfs:domain bido:NumericBibliometricData ;
-    rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
-    rdfs:range bido:BibliometricMeasure ;
-    vs:term_status reg:statusStable .
 
