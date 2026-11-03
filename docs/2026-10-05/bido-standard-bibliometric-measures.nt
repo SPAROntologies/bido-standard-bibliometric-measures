@@ -1,0 +1,186 @@
+<http://www.essepuntato.it/2012/04/tvc/ValueInTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2012/04/tvc/hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A person."@en .
+<http://purl.org/spar/fabio/Journal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+_:n6448d373a1214cfe8486f42ba14c87abb11 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+<http://purl.org/spar/bido/journal-impact-factor> <http://purl.org/vocab/vann/example> "\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:journal-impact-factor ;\n        bido:hasNumericValue \"2.464\"^^xsd:float .\n    " .
+_:n6448d373a1214cfe8486f42ba14c87abb3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/terms/modified> "2026-10-05" .
+_:n6448d373a1214cfe8486f42ba14c87abb23 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <https://schema.org/keywords> "bibliometric measures"@en .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#label> "was attributed to"@en .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/2000/01/rdf-schema#label> "e-index" .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://www.w3.org/2002/07/owl#priorVersion> <http://purl.org/spar/bido-standard-bibliometric-measures/2026-09-13> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#comment> "An idea or notion; a unit of thought."@en .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between an entity ascribed to an agent and that agent."@en .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:n6448d373a1214cfe8486f42ba14c87abb17 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:n6448d373a1214cfe8486f42ba14c87abb1 <http://www.w3.org/2002/07/owl#allValuesFrom> _:n6448d373a1214cfe8486f42ba14c87abb2 .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "temporal entity"@en .
+_:n6448d373a1214cfe8486f42ba14c87abb10 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal interval or instant."@en .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bido"@en .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/2000/01/rdf-schema#comment> "An index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist's most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal." .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/bido/e-index> <http://purl.org/vocab/vann/example> "\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:e-index ;\n        bido:hasNumericValue \"3\"^^xsd:integer .\n    " .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/2000/01/rdf-schema#comment> "The count of all the citation received by all the papers of a certain author." .
+_:n6448d373a1214cfe8486f42ba14c87abb2 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb5 .
+_:n6448d373a1214cfe8486f42ba14c87abb8 <http://www.w3.org/2002/07/owl#allValuesFrom> _:n6448d373a1214cfe8486f42ba14c87abb9 .
+<http://www.essepuntato.it/2012/04/tvc/atTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/tvc/> .
+_:n6448d373a1214cfe8486f42ba14c87abb5 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/spar/bido"@en .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/2000/01/rdf-schema#comment> "A measure reflecting the average number of citations to recent articles published in the journal. It is frequently used as a proxy for the relative importance of a journal within its field, with journals with higher impact factors deemed to be more important than those with lower ones." .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/terms/publisher> <https://ror.org/00wb4mk85> .
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2001/XMLSchema#float> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <https://schema.org/codeRepository> <https://github.com/SPAROntologies/bido> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/elements/1.1/language> <http://id.loc.gov/vocabulary/iso639-2/eng> .
+_:n6448d373a1214cfe8486f42ba14c87abb6 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#TemporalEntity> .
+<http://www.essepuntato.it/2012/04/tvc/withValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2012/04/tvc/ValueInTime> .
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#label> "time interval"@en .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/terms/source> <https://github.com/SPAROntologies/bido/blob/master/docs/cq.md> .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/spar/bido-core> .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-standard-bibliometric-measures/> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:n6448d373a1214cfe8486f42ba14c87abb13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6448d373a1214cfe8486f42ba14c87abb22 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://www.essepuntato.it/2012/04/tvc/atTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#TemporalEntity> .
+<http://www.essepuntato.it/2012/04/tvc/withValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between the value in time situation and the actual value held by the entity partaking in that situation."@en .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://www.w3.org/2002/07/owl#versionInfo> "1.1.3"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:n6448d373a1214cfe8486f42ba14c87abb1 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb6 .
+<http://purl.org/spar/fabio/Journal> <http://www.w3.org/2000/01/rdf-schema#label> "journal"@en .
+<http://purl.org/spar/bido/author-citation-count> <http://purl.org/vocab/vann/example> "\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:author-citation-count ;\n        bido:hasNumericValue \"56\"^^xsd:integer .\n    " .
+<http://www.essepuntato.it/2012/04/tvc/atTime> <http://www.w3.org/2000/01/rdf-schema#label> "at time"@en .
+_:n6448d373a1214cfe8486f42ba14c87abb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6448d373a1214cfe8486f42ba14c87abb24 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:n6448d373a1214cfe8486f42ba14c87abb13 .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:n6448d373a1214cfe8486f42ba14c87abb19 .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "Something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity."@en .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n6448d373a1214cfe8486f42ba14c87abb3 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb4 .
+<http://www.essepuntato.it/2012/04/tvc/hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between an entity and a value in time situation."@en .
+<http://www.essepuntato.it/2012/04/tvc/withValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:n6448d373a1214cfe8486f42ba14c87abb9 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb10 .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/elements/1.1/creator> "Enrico Motta (https://orcid.org/0000-0003-0015-1952)" .
+_:n6448d373a1214cfe8486f42ba14c87abb13 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb18 .
+<http://www.essepuntato.it/2012/04/tvc/withinContext> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2012/04/tvc/ValueInTime> .
+<http://www.essepuntato.it/2012/04/tvc/withinContext> <http://www.w3.org/2000/01/rdf-schema#label> "within context"@en .
+_:n6448d373a1214cfe8486f42ba14c87abb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6448d373a1214cfe8486f42ba14c87abb21 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Journal> .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/2000/01/rdf-schema#label> "author citation count" .
+_:n6448d373a1214cfe8486f42ba14c87abb14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6448d373a1214cfe8486f42ba14c87abb15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.essepuntato.it/2012/04/tvc/ValueInTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/tvc/> .
+_:n6448d373a1214cfe8486f42ba14c87abb7 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb12 .
+_:n6448d373a1214cfe8486f42ba14c87abb12 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.essepuntato.it/2012/04/tvc/hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value"@en .
+<http://purl.org/spar/fabio/Journal> <http://www.w3.org/2000/01/rdf-schema#comment> "A scholarly periodical primarily devoted to the publication of original research papers."@en .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <https://schema.org/keywords> "Semantic Publishing and Referencing Ontologies"@en .
+<http://www.essepuntato.it/2012/04/tvc/hasValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/tvc/> .
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/time#> .
+_:n6448d373a1214cfe8486f42ba14c87abb19 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb24 .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/2000/01/rdf-schema#label> "h-index" .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://purl.org/spar/bido-standard-bibliometric-measures/2026-09-13> .
+<http://purl.org/spar/fabio/Journal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6448d373a1214cfe8486f42ba14c87abb7 <http://www.w3.org/2002/07/owl#allValuesFrom> _:n6448d373a1214cfe8486f42ba14c87abb8 .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <https://schema.org/keywords> "SPAR Ontologies"@en .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://xmlns.com/foaf/0.1/logo> <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
+<http://www.essepuntato.it/2012/04/tvc/ValueInTime> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular kind of time-indexed situation that represents a hub linking the entity having a particular value, the value itself and the temporal and contextual extents from which the entity-value relationship depends."@en .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:n6448d373a1214cfe8486f42ba14c87abb18 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:n6448d373a1214cfe8486f42ba14c87abb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#label> "person"@en .
+<http://www.essepuntato.it/2012/04/tvc/atTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.essepuntato.it/2012/04/tvc/ValueInTime> .
+<http://www.essepuntato.it/2012/04/tvc/withinContext> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a value in time and the specific context within which the fact of the entity having the value is relevant."@en .
+<http://www.essepuntato.it/2012/04/tvc/withValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/tvc/> .
+_:n6448d373a1214cfe8486f42ba14c87abb13 <http://www.w3.org/2002/07/owl#allValuesFrom> _:n6448d373a1214cfe8486f42ba14c87abb14 .
+_:n6448d373a1214cfe8486f42ba14c87abb14 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb17 .
+_:n6448d373a1214cfe8486f42ba14c87abb20 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb23 .
+_:n6448d373a1214cfe8486f42ba14c87abb14 <http://www.w3.org/2002/07/owl#allValuesFrom> _:n6448d373a1214cfe8486f42ba14c87abb15 .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-standard-bibliometric-measures/> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/elements/1.1/creator> "Francesco Osborne (https://orcid.org/0000-0001-6557-3131)" .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/published> .
+<http://www.essepuntato.it/2012/04/tvc/atTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a situation and the particular temporal instant or time period in which the situation takes place."@en .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6448d373a1214cfe8486f42ba14c87abb4 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:n6448d373a1214cfe8486f42ba14c87abb1 .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core#> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/elements/1.1/contributor> "Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/spar/bido-standard-bibliometric-measures/2026-10-05> .
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal entity with an extent or duration."@en .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://www.w3.org/2000/01/rdf-schema#label> "BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures)" .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <https://schema.org/keywords> "semantic publishing"@en .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/terms/bibliographicCitation> "Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Proceedings of the 4th Workshop on Linked Science (LISC 2014): 24–35. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf" .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:n6448d373a1214cfe8486f42ba14c87abb7 .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "agent"@en .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-standard-bibliometric-measures/> .
+_:n6448d373a1214cfe8486f42ba14c87abb2 <http://www.w3.org/2002/07/owl#allValuesFrom> _:n6448d373a1214cfe8486f42ba14c87abb3 .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/2000/01/rdf-schema#comment> "An h-index complement, aimed at considering the contributions of excess citations, which are mainly from highly cited papers. It is necessary, especially for evaluating highly cited scientists or for precisely comparing the scientific output of a group of scientists having an identical h-index." .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/elements/1.1/date> "2026-10-05" .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6448d373a1214cfe8486f42ba14c87abb20 <http://www.w3.org/2002/07/owl#allValuesFrom> _:n6448d373a1214cfe8486f42ba14c87abb21 .
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <https://schema.org/keywords> "scholarly publishing"@en .
+<http://purl.org/spar/bido/h-index> <http://purl.org/vocab/vann/example> "\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:h-index ;\n        bido:hasNumericValue \"8\"^^xsd:integer .\n    " .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <https://schema.org/keywords> "scientometrics"@en .
+_:n6448d373a1214cfe8486f42ba14c87abb19 <http://www.w3.org/2002/07/owl#allValuesFrom> _:n6448d373a1214cfe8486f42ba14c87abb20 .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://www.essepuntato.it/2012/04/tvc/withValue> <http://www.w3.org/2000/01/rdf-schema#label> "with value"@en .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:n6448d373a1214cfe8486f42ba14c87abb19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6448d373a1214cfe8486f42ba14c87abb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6448d373a1214cfe8486f42ba14c87abb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+_:n6448d373a1214cfe8486f42ba14c87abb21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.essepuntato.it/2012/04/tvc/atTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/bido/h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://www.essepuntato.it/2012/04/tvc/withinContext> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/tvc/> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <https://schema.org/keywords> "bibliometrics"@en .
+_:n6448d373a1214cfe8486f42ba14c87abb16 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "concept"@en .
+_:n6448d373a1214cfe8486f42ba14c87abb20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-standard-bibliometric-measures/> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/vocab/vann/changes> <https://github.com/SPAROntologies/bido-standard-bibliometric-measures/blob/master/CHANGELOG.md> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/elements/1.1/creator> "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)" .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/ontology/bibo/doi> "https://doi.org/10.25504/FAIRsharing.d7f0a9" .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <https://schema.org/includedInDataCatalog> <https://fairsharing.org/> .
+<http://www.essepuntato.it/2012/04/tvc/withinContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.sparontologies.net/ontologies/bido> .
+_:n6448d373a1214cfe8486f42ba14c87abb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6448d373a1214cfe8486f42ba14c87abb21 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb22 .
+<http://www.essepuntato.it/2012/04/tvc/hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2012/04/tvc/ValueInTime> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/terms/issued> "2015-07-15" .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/2000/01/rdf-schema#label> "journal impact factor" .
+_:n6448d373a1214cfe8486f42ba14c87abb15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:n6448d373a1214cfe8486f42ba14c87abb8 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb11 .
+_:n6448d373a1214cfe8486f42ba14c87abb15 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb16 .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/elements/1.1/title> "The BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures)" .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/terms/created> "2015-07-15" .
+<http://purl.org/spar/bido-standard-bibliometric-measures> <http://purl.org/dc/elements/1.1/description> "\nThis module of BiDO describes a list of possible bibliometric measures that can be used to define bibliometric data of publication-related entities, e.g.: h-index, e-index, journal impact factor, author citation count.\n\n![The architecture of the BiDO-Standard-Bibliometric-Measures module.](bido-standard-bibliometric-measures.png)\n\n"@en .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://www.essepuntato.it/2012/04/tvc/ValueInTime> <http://www.w3.org/2000/01/rdf-schema#label> "value in time"@en .
+_:n6448d373a1214cfe8486f42ba14c87abb9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/time#> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

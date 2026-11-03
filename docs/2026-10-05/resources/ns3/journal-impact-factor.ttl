@@ -1,0 +1,26 @@
+@prefix ns1: <http://purl.org/spar/fabio/> .
+@prefix ns3: <http://purl.org/spar/bido/> .
+@prefix ns4: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+ns3:journal-impact-factor a [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Restriction ;
+                            owl:allValuesFrom ns1:Journal ;
+                            owl:onProperty [ owl:inverseOf ns3:holdsBibliometricDataInTime ] ] ;
+                    owl:onProperty [ owl:inverseOf ns3:withBibliometricData ] ] ;
+            owl:onProperty [ owl:inverseOf ns3:hasMeasure ] ],
+        ns3:BibliometricMeasure,
+        owl:NamedIndividual ;
+    rdfs:label "journal impact factor" ;
+    vann:example """
+    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
+        bido:hasMeasure bido:journal-impact-factor ;
+        bido:hasNumericValue "2.464"^^xsd:float .
+    """ ;
+    rdfs:comment "A measure reflecting the average number of citations to recent articles published in the journal. It is frequently used as a proxy for the relative importance of a journal within its field, with journals with higher impact factors deemed to be more important than those with lower ones." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-standard-bibliometric-measures/> ;
+    ns4:term_status <http://purl.org/linked-data/registry#statusStable> .
+
