@@ -7,41 +7,41 @@
    xmlns:vann="http://purl.org/vocab/vann/"
 >
   <rdf:Description rdf:about="http://purl.org/spar/bido/journal-impact-factor">
-    <ns4:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb19"/>
-    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/"/>
     <rdfs:label>journal impact factor</rdfs:label>
+    <rdf:type rdf:nodeID="na33f427d47174a8182f83607fdca09b9b19"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
     <vann:example>
     :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
         bido:hasMeasure bido:journal-impact-factor ;
         bido:hasNumericValue "2.464"^^xsd:float .
     </vann:example>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/"/>
     <rdfs:comment>A measure reflecting the average number of citations to recent articles published in the journal. It is frequently used as a proxy for the relative importance of a journal within its field, with journals with higher impact factors deemed to be more important than those with lower ones.</rdfs:comment>
+    <ns4:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb21">
-    <owl:onProperty rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb22"/>
+  <rdf:Description rdf:nodeID="na33f427d47174a8182f83607fdca09b9b19">
+    <owl:onProperty rdf:nodeID="na33f427d47174a8182f83607fdca09b9b24"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="na33f427d47174a8182f83607fdca09b9b20"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na33f427d47174a8182f83607fdca09b9b21">
     <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Journal"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb19">
+    <owl:onProperty rdf:nodeID="na33f427d47174a8182f83607fdca09b9b22"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb24"/>
-    <owl:allValuesFrom rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb20"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb22">
-    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  <rdf:Description rdf:nodeID="na33f427d47174a8182f83607fdca09b9b20">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="na33f427d47174a8182f83607fdca09b9b23"/>
+    <owl:allValuesFrom rdf:nodeID="na33f427d47174a8182f83607fdca09b9b21"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb23">
-    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb24">
+  <rdf:Description rdf:nodeID="na33f427d47174a8182f83607fdca09b9b24">
     <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb20">
-    <owl:onProperty rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb23"/>
-    <owl:allValuesFrom rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb21"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="na33f427d47174a8182f83607fdca09b9b22">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na33f427d47174a8182f83607fdca09b9b23">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
   </rdf:Description>
 </rdf:RDF>

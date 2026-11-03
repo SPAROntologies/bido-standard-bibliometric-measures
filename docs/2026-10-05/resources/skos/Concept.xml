@@ -4,9 +4,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
-    <rdfs:comment xml:lang="en">An idea or notion; a unit of thought.</rdfs:comment>
     <rdfs:label xml:lang="en">concept</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">An idea or notion; a unit of thought.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
   </rdf:Description>
 </rdf:RDF>
