@@ -1,6 +1,12 @@
 # BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures)
 
-The BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures) describes a list of possible bibliometric measures tha can be used to define bibliometric data of publication-related entities.
+[![License](https://img.shields.io/github/license/SPAROntologies/bido-standard-bibliometric-measures)](LICENSE.md)
+[![Release](https://img.shields.io/github/v/release/SPAROntologies/bido-standard-bibliometric-measures)](https://github.com/SPAROntologies/bido-standard-bibliometric-measures/releases/latest)
+[![Tests](https://img.shields.io/github/actions/workflow/status/SPAROntologies/bido-standard-bibliometric-measures/validation.yml?label=tests)](https://github.com/SPAROntologies/bido-standard-bibliometric-measures/actions/workflows/validation.yml)
+[![Documentation](https://img.shields.io/badge/docs-sparontologies.net-blue)](http://www.sparontologies.net/ontologies/bido)
+[![IRI](https://img.shields.io/badge/IRI-purl.org%2Fspar%2Fbido--standard--bibliometric--measures-blue)](http://purl.org/spar/bido-standard-bibliometric-measures)
+
+The **_BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures)_** describes a list of possible bibliometric measures tha can be used to define bibliometric data of publication-related entities.
 
 **URL:** http://purl.org/spar/bido-standard-bibliometric-measures
 

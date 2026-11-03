@@ -1,11 +1,7 @@
 [project]
 name = "bido-standard-bibliometric-measures"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.1.3"
+description = "The BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures) describes a list of possible bibliometric measures tha can be used to define bibliometric data of publication-related entities."
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-    "codespell>=2.4.3",
-    "rdflib>=7.6.0",
-    "requests>=2.34.2",
-]
+dependencies = []
