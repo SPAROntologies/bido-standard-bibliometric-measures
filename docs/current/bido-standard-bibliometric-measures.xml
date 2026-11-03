@@ -1,608 +1,329 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:bibo="http://purl.org/ontology/bibo/"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:dcterms="http://purl.org/dc/terms/"
    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:ns4="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+   xmlns:ns5="http://purl.org/ontology/bibo/"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:schema="https://schema.org/"
-   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
    xmlns:vann="http://purl.org/vocab/vann/"
-   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:about="http://purl.org/spar/bido/e-index">
-    <rdf:type rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb7"/>
-    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdfs:label>e-index</rdfs:label>
-    <vann:example>
-    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
-        bido:hasMeasure bido:e-index ;
-        bido:hasNumericValue "3"^^xsd:integer .
-    </vann:example>
-    <rdfs:comment>An h-index complement, aimed at considering the contributions of excess citations, which are mainly from highly cited papers. It is necessary, especially for evaluating highly cited scientists or for precisely comparing the scientific output of a group of scientists having an identical h-index.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2012/04/tvc/ValueInTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/tvc/"/>
+    <rdfs:comment xml:lang="en">A particular kind of time-indexed situation that represents a hub linking the entity having a particular value, the value itself and the temporal and contextual extents from which the entity-value relationship depends.</rdfs:comment>
+    <rdfs:label xml:lang="en">value in time</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/h-index">
-    <rdf:type rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb13"/>
-    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdfs:label>h-index</rdfs:label>
-    <vann:example>
-    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
-        bido:hasMeasure bido:h-index ;
-        bido:hasNumericValue "8"^^xsd:integer .
-    </vann:example>
-    <rdfs:comment>An index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist's most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2012/04/tvc/hasValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">The relation between an entity and a value in time situation.</rdfs:comment>
+    <rdfs:label xml:lang="en">has value</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/tvc/"/>
+    <rdfs:range rdf:resource="http://www.essepuntato.it/2012/04/tvc/ValueInTime"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb3">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <owl:onProperty rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb4"/>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+    <rdfs:comment xml:lang="en">A person.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">person</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb2">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb3"/>
-    <owl:onProperty rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb5"/>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Journal">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <rdfs:label xml:lang="en">journal</rdfs:label>
+    <rdfs:comment xml:lang="en">A scholarly periodical primarily devoted to the publication of original research papers.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb22">
-    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb17">
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb11">
     <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb8">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb9"/>
-    <owl:onProperty rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb11"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2006/time#TemporalEntity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">temporal entity</rdfs:label>
-    <rdfs:comment xml:lang="en">A temporal interval or instant.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">concept</rdfs:label>
-    <rdfs:comment xml:lang="en">An idea or notion; a unit of thought.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/hasNumericValue">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="en">has numeric value</rdfs:label>
-    <vann:example>
-    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
-        bido:hasNumericValue "2.464"^^xsd:float .
-    </vann:example>
-    <rdfs:comment xml:lang="en">The actual value of the bibliometric data in consideration.</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/spar/bido/NumericBibliometricData"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-core/"/>
-    <rdfs:range rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb33"/>
-    <rdfs:range rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb36"/>
-    <rdfs:range rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb39"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb34">
-    <rdf:first rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <rdf:rest rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb35"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/holdsBibliometricDataInTime">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">holds bibliometric data in time</rdfs:label>
-    <vann:example>
-    :my-journal a fabio:Journal ;
-        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .
-
-    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
-        bido:accordingTo :my-organization ;
-        bido:withBibliometricData :my-numeric-bibliometric-data .
-    </vann:example>
-    <rdfs:comment xml:lang="en">The relation between a person or any other publication-related entity and bibliometric data that the entity holds.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-core/"/>
-    <rdfs:range rdf:resource="http://purl.org/spar/bido/BibliometricDataInTime"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2012/04/tvc/hasValue"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <skos:note xml:lang="en">
-The ontology permits one to specify the time period over which a bibliometric data is held, and the other contextual entities responsible for having provided such bibliometric data.
-    </skos:note>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido-core">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <rdfs:label xml:lang="en">BiDO Core module (BiDO-Core)</rdfs:label>
-    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)</dc:contributor>
-    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enrico Motta (https://orcid.org/0000-0003-0015-1952)</dc:creator>
-    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Francesco Osborne (https://orcid.org/0000-0001-6557-3131)</dc:creator>
-    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silvio Peroni (http://orcid.org/0000-0003-0530-4305)</dc:creator>
-    <dc:date>2026-08-14</dc:date>
-    <dc:description xml:lang="en">
-The core module of BiDO allows us to describe any entity and the related bibliometric data (through the property `bido:holdsBibliometricDataInTime`) at a certain time (i.e., `tvc:atTime`, a property defined by the imported TVC ontology for specifying temporal instants or intervals) and according to a certain agent (through the property `bido:accordingTo`, which is a sub-property of `prov:wasAttributedTo` and allows us to indicate the agent responsible for such bibliometric data).
-
-![The architecture of the BiDO-Core module.](bido-core.png)
-
-Two alternative kinds of bibliometric data are specifiable (through the property `bido:withBibliometricData`) in BiDO: numeric data and categorial data. 
-Numeric data are those characterised by a certain integer or float value related to a particular bibliometric measure. 
-Some of these measures – i.e., h-index, author citation count, e-index, and journal impact factor – are available in a particular module of BiDO responsible for describing the most common bibliometric measures.
-</dc:description>
-    <dc:title xml:lang="en">BiDO Core module (BiDO-Core)</dc:title>
-    <dcterms:bibliographicCitation>Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Proceedings of the 4th Workshop on Linked Science (LISC 2014): 24–35. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf</dcterms:bibliographicCitation>
-    <dcterms:created>2015-07-14</dcterms:created>
-    <dcterms:issued>2015-07-14</dcterms:issued>
-    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:modified>2026-08-14</dcterms:modified>
-    <dcterms:publisher rdf:resource="https://ror.org/00wb4mk85"/>
-    <dcterms:source rdf:resource="https://github.com/SPAROntologies/bido/blob/master/docs/cq.md"/>
-    <bibo:doi>https://doi.org/10.25504/FAIRsharing.d7f0a9</bibo:doi>
-    <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/published"/>
-    <vann:changes xml:lang="en">
-* **v1.2.1**: Added new documentation, including annotation properties (e.g., `bibo:doi`, `schema:codeRepository`, etc.), term properties (e.g., `vann:example`, `vs:term_status`, etc.), exemplary competency questions with their respective SPARQL queries, and a Grafoo diagram.
-    </vann:changes>
-    <vann:preferredNamespacePrefix xml:lang="en">bido</vann:preferredNamespacePrefix>
-    <vann:preferredNamespaceUri xml:lang="en">http://purl.org/spar/bido</vann:preferredNamespaceUri>
-    <rdfs:seeAlso rdf:resource="http://www.sparontologies.net/ontologies/bido"/>
-    <owl:backwardCompatibleWith rdf:resource="http://purl.org/spar/bido-core/2018-07-13"/>
-    <owl:imports rdf:resource="http://purl.org/spar/tvc"/>
-    <owl:priorVersion rdf:resource="http://purl.org/spar/bido-core/2018-07-13"/>
-    <owl:versionIRI rdf:resource="http://purl.org/spar/bido-core/2026-08-14"/>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2.1</owl:versionInfo>
-    <foaf:logo rdf:resource="https://github.com/SPAROntologies/bido/blob/master/spar.png"/>
-    <schema:codeRepository rdf:resource="https://github.com/SPAROntologies/bido"/>
-    <schema:includedInDataCatalog rdf:resource="https://fairsharing.org/"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb12">
-    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/BibliometricData">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">bibliometric data</rdfs:label>
-    <vann:example>
-    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
-        bido:accordingTo :my-organization ;
-        bido:withBibliometricData :my-bibliometric-data .
-
-    :my-bibliometric-data a bido:BibliometricData .
-    </vann:example>
-    <rdfs:comment xml:lang="en">Any kind of bibliometric data. In particular, they are organised according two sub-concepts: numeric data and categorial data.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-core/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <rdfs:label>BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures)</rdfs:label>
-    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)</dc:contributor>
-    <dc:creator>Enrico Motta (https://orcid.org/0000-0003-0015-1952)</dc:creator>
-    <dc:creator>Francesco Osborne (https://orcid.org/0000-0001-6557-3131)</dc:creator>
-    <dc:creator>Silvio Peroni (http://orcid.org/0000-0003-0530-4305)</dc:creator>
-    <dc:date>2026-09-13</dc:date>
-    <dc:description xml:lang="en">
-This module of BiDO describes a list of possible bibliometric measures tha can be used to define bibliometric data of publication-related entities, e.g.: h-index, e-index, journal impact factor, author citation count.
-
-![The architecture of the BiDO-Standard-Bibliometric-Measures module.](bido-standard-bibliometric-measures.png)
-
-</dc:description>
-    <dc:title>BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures)</dc:title>
-    <dcterms:bibliographicCitation>Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Proceedings of the 4th Workshop on Linked Science (LISC 2014): 24–35. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf</dcterms:bibliographicCitation>
-    <dcterms:created>2015-07-15</dcterms:created>
-    <dcterms:issued>2015-07-15</dcterms:issued>
-    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:modified>2026-09-13</dcterms:modified>
-    <dcterms:publisher rdf:resource="https://ror.org/00wb4mk85"/>
-    <dcterms:source rdf:resource="https://github.com/SPAROntologies/bido/blob/master/docs/cq.md"/>
-    <bibo:doi>https://doi.org/10.25504/FAIRsharing.d7f0a9</bibo:doi>
-    <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/published"/>
-    <vann:changes xml:lang="en">
-* **v1.1.1**: Added new documentation, including annotation properties (e.g., `bibo:doi`, `schema:codeRepository`, etc.), term properties (e.g., `vann:example`, `vs:term_status`, etc.), exemplary competency questions with their respective SPARQL queries, and a Grafoo diagram.
-* **v1.1.2**: Fixed `tvc:atTime` range, adding `time:TemporalEntity`.
-    </vann:changes>
-    <vann:preferredNamespacePrefix xml:lang="en">bido</vann:preferredNamespacePrefix>
-    <vann:preferredNamespaceUri xml:lang="en">http://purl.org/spar/bido</vann:preferredNamespaceUri>
-    <rdfs:seeAlso rdf:resource="http://www.sparontologies.net/ontologies/bido"/>
-    <owl:backwardCompatibleWith rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/2026-08-14"/>
-    <owl:imports rdf:resource="http://purl.org/spar/bido-core"/>
-    <owl:priorVersion rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/2026-08-14"/>
-    <owl:versionIRI rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/2026-09-13"/>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1.1</owl:versionInfo>
-    <foaf:logo rdf:resource="https://github.com/SPAROntologies/bido/blob/master/spar.png"/>
-    <schema:codeRepository rdf:resource="https://github.com/SPAROntologies/bido"/>
-    <schema:includedInDataCatalog rdf:resource="https://fairsharing.org/"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb20"/>
-    <owl:onProperty rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb24"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb41">
-    <rdf:first rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb7">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb8"/>
-    <owl:onProperty rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb12"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb29">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    <owl:onProperty rdf:resource="http://purl.org/spar/bido/hasNumericValue"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb13">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb14"/>
-    <owl:onProperty rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb18"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/hasMeasure">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">has measure</rdfs:label>
-    <vann:example>
-    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
-        bido:hasMeasure bido:journal-impact-factor .
-    </vann:example>
-    <rdfs:comment xml:lang="en">The relation between some bibliometric data and a measure (e.g., h-index, e-index, journal impact factor).</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/spar/bido/NumericBibliometricData"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-core/"/>
-    <rdfs:range rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb32">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2006/time#Interval"/>
-    <owl:onProperty rdf:resource="http://www.essepuntato.it/2012/04/tvc/atTime"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb38">
-    <rdf:first rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/bido/journal-impact-factor">
-    <rdf:type rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb19"/>
-    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdfs:label>journal impact factor</rdfs:label>
     <vann:example>
     :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
         bido:hasMeasure bido:journal-impact-factor ;
         bido:hasNumericValue "2.464"^^xsd:float .
     </vann:example>
     <rdfs:comment>A measure reflecting the average number of citations to recent articles published in the journal. It is frequently used as a proxy for the relative importance of a journal within its field, with journals with higher impact factors deemed to be more important than those with lower ones.</rdfs:comment>
+    <ns4:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb19"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label>journal impact factor</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb30">
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb3">
+    <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:onProperty rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb4"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    <owl:onProperty rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/BibliometricMeasure">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">bibliometric measure</rdfs:label>
-    <vann:example>
-    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
-        bido:hasMeasure bido:journal-impact-factor .
+  <rdf:Description rdf:about="http://purl.org/spar/bido-standard-bibliometric-measures">
+    <dcterms:modified>2026-10-05</dcterms:modified>
+    <owl:priorVersion rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/2026-09-13"/>
+    <schema:keywords xml:lang="en">bibliometric measures</schema:keywords>
+    <schema:keywords xml:lang="en">Semantic Publishing and Referencing Ontologies</schema:keywords>
+    <schema:keywords xml:lang="en">SPAR Ontologies</schema:keywords>
+    <schema:keywords xml:lang="en">semantic publishing</schema:keywords>
+    <schema:keywords xml:lang="en">scholarly publishing</schema:keywords>
+    <schema:keywords xml:lang="en">scientometrics</schema:keywords>
+    <schema:keywords xml:lang="en">bibliometrics</schema:keywords>
+    <vann:preferredNamespacePrefix xml:lang="en">bido</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri xml:lang="en">http://purl.org/spar/bido</vann:preferredNamespaceUri>
+    <dcterms:publisher rdf:resource="https://ror.org/00wb4mk85"/>
+    <dc:language rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>
+    <schema:codeRepository rdf:resource="https://github.com/SPAROntologies/bido"/>
+    <dcterms:source rdf:resource="https://github.com/SPAROntologies/bido/blob/master/docs/cq.md"/>
+    <owl:imports rdf:resource="http://purl.org/spar/bido-core"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1.3</owl:versionInfo>
+    <dc:creator>Enrico Motta (https://orcid.org/0000-0003-0015-1952)</dc:creator>
+    <dc:creator>Francesco Osborne (https://orcid.org/0000-0001-6557-3131)</dc:creator>
+    <dc:creator>Silvio Peroni (http://orcid.org/0000-0003-0530-4305)</dc:creator>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <owl:backwardCompatibleWith rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/2026-09-13"/>
+    <foaf:logo rdf:resource="https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png"/>
+    <ns5:status rdf:resource="http://purl.org/ontology/bibo/status/published"/>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)</dc:contributor>
+    <owl:versionIRI rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/2026-10-05"/>
+    <rdfs:label>BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures)</rdfs:label>
+    <dcterms:bibliographicCitation>Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Proceedings of the 4th Workshop on Linked Science (LISC 2014): 24–35. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf</dcterms:bibliographicCitation>
+    <dc:date>2026-10-05</dc:date>
+    <vann:changes rdf:resource="https://github.com/SPAROntologies/bido-standard-bibliometric-measures/blob/master/CHANGELOG.md"/>
+    <ns5:doi>https://doi.org/10.25504/FAIRsharing.d7f0a9</ns5:doi>
+    <schema:includedInDataCatalog rdf:resource="https://fairsharing.org/"/>
+    <rdfs:seeAlso rdf:resource="http://www.sparontologies.net/ontologies/bido"/>
+    <dcterms:issued>2015-07-15</dcterms:issued>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dc:title>The BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures)</dc:title>
+    <dcterms:created>2015-07-15</dcterms:created>
+    <dc:description xml:lang="en">
+This module of BiDO describes a list of possible bibliometric measures that can be used to define bibliometric data of publication-related entities, e.g.: h-index, e-index, journal impact factor, author citation count.
 
-    bido:journal-impact-factor a bido:BibliometricMeasure .
-    </vann:example>
-    <rdfs:comment xml:lang="en">Any kind of measure related with a bibliometric data (e.g., h-index, e-index, journal impact factor).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-core/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/BibliometricDataInTime">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">bibliometric data in time</rdfs:label>
-    <vann:example>
-    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
-        tvc:atTime :my-time-interval ;
-        bido:accordingTo :my-organization ;
-        bido:withBibliometricData :my-bibliometric-data .
-    </vann:example>
-    <rdfs:comment xml:lang="en">A particular situation that describes a bibliometric data a person, an article, or any other publication-related entity may have, that can be restricted to a particular time interval.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-core/"/>
-    <rdfs:subClassOf rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb31"/>
-    <rdfs:subClassOf rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb32"/>
-    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2012/04/tvc/ValueInTime"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/withBibliometricData">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">with bibliometric data</rdfs:label>
-    <vann:example>
-    :my-journal a fabio:Journal ;
-        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .
+![The architecture of the BiDO-Standard-Bibliometric-Measures module.](bido-standard-bibliometric-measures.png)
 
-    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
-        bido:accordingTo :my-organization ;
-        bido:withBibliometricData :my-numeric-bibliometric-data .
-    </vann:example>
-    <rdfs:comment xml:lang="en">The relation between an entity's bibliometric data in time and a definition of the type of bibliometric data held by this entity.</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/spar/bido/BibliometricDataInTime"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-core/"/>
-    <rdfs:range rdf:resource="http://purl.org/spar/bido/BibliometricData"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2012/04/tvc/withValue"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+</dc:description>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb33">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <owl:unionOf rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb34"/>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb23">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb25">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    <owl:onProperty rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">An idea or notion; a unit of thought.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    <rdfs:label xml:lang="en">concept</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasAttributedTo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:label xml:lang="en">was attributed to</rdfs:label>
     <rdfs:comment xml:lang="en">The relation between an entity ascribed to an agent and that agent.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
-    <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/accordingTo">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">according to</rdfs:label>
-    <vann:example>
-    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
-        bido:accordingTo :my-organization ;
-        bido:withBibliometricData :my-numeric-bibliometric-data .
-
-    :my-organization a prov:Agent .
-    </vann:example>
-    <rdfs:comment xml:lang="en">The relation between a bibliometric data in time situation and an agent who provided such data.</rdfs:comment>
-    <rdfs:domain rdf:resource="http://purl.org/spar/bido/BibliometricDataInTime"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-core/"/>
     <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2012/04/tvc/withinContext"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasAttributedTo"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb21">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Journal"/>
-    <owl:onProperty rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb22"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb36">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <owl:unionOf rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb37"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">person</rdfs:label>
-    <rdfs:comment xml:lang="en">A person.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/NumericBibliometricData">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">numeric bibliometric data</rdfs:label>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/e-index">
+    <rdfs:label>e-index</rdfs:label>
     <vann:example>
     :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
-        bido:hasMeasure bido:journal-impact-factor ;
-        bido:hasNumericValue "2.464"^^xsd:float .
+        bido:hasMeasure bido:e-index ;
+        bido:hasNumericValue "3"^^xsd:integer .
     </vann:example>
-    <rdfs:comment xml:lang="en">Bibliometric data represented by numbers. Such numeric data are those characterised by a certain integer or float value related to a particular bibliometric measure.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-core/"/>
-    <rdfs:subClassOf rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb25"/>
-    <rdfs:subClassOf rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb26"/>
-    <rdfs:subClassOf rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb27"/>
-    <rdfs:subClassOf rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb28"/>
-    <rdfs:subClassOf rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb29"/>
-    <rdfs:subClassOf rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb30"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/BibliometricData"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb7"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <ns4:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment>An h-index complement, aimed at considering the contributions of excess citations, which are mainly from highly cited papers. It is necessary, especially for evaluating highly cited scientists or for precisely comparing the scientific output of a group of scientists having an identical h-index.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb40">
-    <rdf:first rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <rdf:rest rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb41"/>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#integer">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/bido/CategorialBibliometricData">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">categorial bibliometric data</rdfs:label>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb17">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb1">
+    <owl:allValuesFrom rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb2"/>
+    <owl:onProperty rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb6"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/h-index">
+    <ns4:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment>An index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist's most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal.</rdfs:comment>
+    <rdf:type rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb13"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdfs:label>h-index</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/"/>
     <vann:example>
-    :my-person a foaf:Person ;
-        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .
-
-    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
-        bido:accordingTo :my-organization ;
-        bido:withBibliometricData :my-categorial-bibliometric-data .
-
-    :my-categorial-bibliometric-data a bido:CategorialBibliometricData .
+    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
+        bido:hasMeasure bido:h-index ;
+        bido:hasNumericValue "8"^^xsd:integer .
     </vann:example>
-    <rdfs:comment xml:lang="en">Categorical information that characterises publication-related entities from a bibliometric point of view.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-core/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/BibliometricData"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.essepuntato.it/2012/04/tvc/withinContext">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">within context</rdfs:label>
-    <rdfs:comment xml:lang="en">The relation between a value in time and the specific context within which the fact of the entity having the value is relevant.</rdfs:comment>
-    <rdfs:domain rdf:resource="http://www.essepuntato.it/2012/04/tvc/ValueInTime"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/tvc/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.essepuntato.it/2012/04/tvc/ValueInTime">
+  <rdf:Description rdf:about="http://www.w3.org/2006/time#TemporalEntity">
+    <rdfs:label xml:lang="en">temporal entity</rdfs:label>
+    <rdfs:comment xml:lang="en">A temporal interval or instant.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">value in time</rdfs:label>
-    <rdfs:comment xml:lang="en">A particular kind of time-indexed situation that represents a hub linking the entity having a particular value, the value itself and the temporal and contextual extents from which the entity-value relationship depends.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/tvc/"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time#"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb10">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/bido/author-citation-count">
-    <rdf:type rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb1"/>
-    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdfs:label>author citation count</rdfs:label>
+    <rdfs:comment>The count of all the citation received by all the papers of a certain author.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/"/>
     <vann:example>
     :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
         bido:hasMeasure bido:author-citation-count ;
         bido:hasNumericValue "56"^^xsd:integer .
     </vann:example>
-    <rdfs:comment>The count of all the citation received by all the papers of a certain author.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label>author citation count</rdfs:label>
+    <rdf:type rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb1"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns4:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">time interval</rdfs:label>
-    <rdfs:comment xml:lang="en">A temporal entity with an extent or duration.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time#"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb9">
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb2">
+    <owl:onProperty rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb5"/>
+    <owl:allValuesFrom rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb3"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <owl:onProperty rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb10"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb27">
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb8">
+    <owl:allValuesFrom rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb9"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    <owl:onProperty rdf:resource="http://purl.org/spar/bido/hasNumericValue"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb2"/>
-    <owl:onProperty rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb6"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb18">
-    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">agent</rdfs:label>
-    <rdfs:comment xml:lang="en">Something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb23">
-    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb28">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    <owl:onProperty rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb6">
-    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb16">
-    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb4">
-    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+    <owl:onProperty rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb11"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.essepuntato.it/2012/04/tvc/atTime">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">at time</rdfs:label>
-    <rdfs:comment xml:lang="en">The relation between a situation and the particular temporal instant or time period in which the situation takes place.</rdfs:comment>
-    <rdfs:domain rdf:resource="http://www.essepuntato.it/2012/04/tvc/ValueInTime"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/tvc/"/>
     <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/tvc/"/>
+    <rdfs:label xml:lang="en">at time</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.essepuntato.it/2012/04/tvc/ValueInTime"/>
+    <rdfs:comment xml:lang="en">The relation between a situation and the particular temporal instant or time period in which the situation takes place.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb11">
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb5">
     <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb15">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <owl:onProperty rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb16"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.essepuntato.it/2012/04/tvc/withValue">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">with value</rdfs:label>
-    <rdfs:comment xml:lang="en">The relation between the value in time situation and the actual value held by the entity partaking in that situation.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/tvc/"/>
-    <rdfs:range rdf:resource="http://www.essepuntato.it/2012/04/tvc/ValueInTime"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb26">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    <owl:onProperty rdf:resource="http://purl.org/spar/bido/hasNumericValue"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb20">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb21"/>
-    <owl:onProperty rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb23"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.essepuntato.it/2012/04/tvc/hasValue">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">has value</rdfs:label>
-    <rdfs:comment xml:lang="en">The relation between an entity and a value in time situation.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/tvc/"/>
-    <rdfs:range rdf:resource="http://www.essepuntato.it/2012/04/tvc/ValueInTime"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb31">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
-    <owl:onProperty rdf:resource="http://www.essepuntato.it/2012/04/tvc/withValue"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fabio/Journal">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">journal</rdfs:label>
-    <rdfs:comment xml:lang="en">A scholarly periodical primarily devoted to the publication of original research papers.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb6">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    <rdfs:label xml:lang="en">time interval</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time#"/>
+    <rdfs:comment xml:lang="en">A temporal entity with an extent or duration.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2012/04/tvc/withValue">
+    <rdfs:range rdf:resource="http://www.essepuntato.it/2012/04/tvc/ValueInTime"/>
+    <rdfs:comment xml:lang="en">The relation between the value in time situation and the actual value held by the entity partaking in that situation.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/tvc/"/>
+    <rdfs:label xml:lang="en">with value</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb24">
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb13">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb18"/>
+    <owl:allValuesFrom rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb14"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb22">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb12"/>
+    <owl:allValuesFrom rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb24">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent">
+    <rdfs:comment xml:lang="en">Something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">agent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb9">
+    <owl:onProperty rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb10"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2012/04/tvc/withinContext">
+    <rdfs:domain rdf:resource="http://www.essepuntato.it/2012/04/tvc/ValueInTime"/>
+    <rdfs:label xml:lang="en">within context</rdfs:label>
+    <rdfs:comment xml:lang="en">The relation between a value in time and the specific context within which the fact of the entity having the value is relevant.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/tvc/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb21">
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Journal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb22"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb14">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb17"/>
+    <owl:allValuesFrom rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb15"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb15">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:onProperty rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb16"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb12">
     <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb37">
-    <rdf:first rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <rdf:rest rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb38"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb14">
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb19">
+    <owl:onProperty rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb24"/>
+    <owl:allValuesFrom rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb20"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb15"/>
-    <owl:onProperty rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb17"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#integer">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb10">
-    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb39">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <owl:unionOf rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb40"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb35">
-    <rdf:first rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndb2caccaf97d47009a1768dce3ae60abb5">
-    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb18">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb20">
+    <owl:onProperty rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb23"/>
+    <owl:allValuesFrom rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb21"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb4">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n6448d373a1214cfe8486f42ba14c87abb16">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
 </rdf:RDF>

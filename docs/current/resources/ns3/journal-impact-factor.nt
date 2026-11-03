@@ -1,0 +1,20 @@
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n6448d373a1214cfe8486f42ba14c87abb21 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb22 .
+_:n6448d373a1214cfe8486f42ba14c87abb19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:n6448d373a1214cfe8486f42ba14c87abb21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n6448d373a1214cfe8486f42ba14c87abb22 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:n6448d373a1214cfe8486f42ba14c87abb21 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/fabio/Journal> .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/2000/01/rdf-schema#label> "journal impact factor" .
+<http://purl.org/spar/bido/journal-impact-factor> <http://purl.org/vocab/vann/example> "\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:journal-impact-factor ;\n        bido:hasNumericValue \"2.464\"^^xsd:float .\n    " .
+_:n6448d373a1214cfe8486f42ba14c87abb23 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:n6448d373a1214cfe8486f42ba14c87abb24 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-standard-bibliometric-measures/> .
+_:n6448d373a1214cfe8486f42ba14c87abb20 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb23 .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:n6448d373a1214cfe8486f42ba14c87abb19 .
+_:n6448d373a1214cfe8486f42ba14c87abb20 <http://www.w3.org/2002/07/owl#allValuesFrom> _:n6448d373a1214cfe8486f42ba14c87abb21 .
+_:n6448d373a1214cfe8486f42ba14c87abb20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/2000/01/rdf-schema#comment> "A measure reflecting the average number of citations to recent articles published in the journal. It is frequently used as a proxy for the relative importance of a journal within its field, with journals with higher impact factors deemed to be more important than those with lower ones." .
+_:n6448d373a1214cfe8486f42ba14c87abb19 <http://www.w3.org/2002/07/owl#onProperty> _:n6448d373a1214cfe8486f42ba14c87abb24 .
+<http://purl.org/spar/bido/journal-impact-factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+_:n6448d373a1214cfe8486f42ba14c87abb19 <http://www.w3.org/2002/07/owl#allValuesFrom> _:n6448d373a1214cfe8486f42ba14c87abb20 .
