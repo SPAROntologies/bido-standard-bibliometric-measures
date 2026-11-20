@@ -5,5 +5,5 @@
 prov:Agent a owl:Class ;
     rdfs:label "agent"@en ;
     rdfs:comment "Something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity."@en ;
-    rdfs:isDefinedBy prov: .
+    rdfs:isDefinedBy <http://www.w3.org/ns/prov> .
 

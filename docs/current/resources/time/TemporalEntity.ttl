@@ -5,5 +5,5 @@
 time:TemporalEntity a owl:Class ;
     rdfs:label "temporal entity"@en ;
     rdfs:comment "A temporal interval or instant."@en ;
-    rdfs:isDefinedBy time: .
+    rdfs:isDefinedBy <http://www.w3.org/2006/time> .
 

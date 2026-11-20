@@ -5,5 +5,5 @@
 skos:Concept a owl:Class ;
     rdfs:label "concept"@en ;
     rdfs:comment "An idea or notion; a unit of thought."@en ;
-    rdfs:isDefinedBy skos: .
+    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> .
 
