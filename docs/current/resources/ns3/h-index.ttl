@@ -1,6 +1,6 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://purl.org/spar/bido/> .
-@prefix ns4: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix ns5: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
@@ -21,6 +21,6 @@ ns3:h-index a [ a owl:Restriction ;
         bido:hasNumericValue "8"^^xsd:integer .
     """ ;
     rdfs:comment "An index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist's most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal." ;
-    rdfs:isDefinedBy <http://purl.org/spar/bido-standard-bibliometric-measures/> ;
-    ns4:term_status <http://purl.org/linked-data/registry#statusStable> .
+    rdfs:isDefinedBy <http://purl.org/spar/bido-standard-bibliometric-measures> ;
+    ns5:term_status <http://purl.org/linked-data/registry#statusStable> .
 

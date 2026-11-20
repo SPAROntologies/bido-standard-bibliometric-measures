@@ -1,6 +1,6 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://purl.org/spar/bido/> .
-@prefix ns4: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix ns5: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
@@ -21,6 +21,6 @@ ns3:author-citation-count a [ a owl:Restriction ;
         bido:hasNumericValue "56"^^xsd:integer .
     """ ;
     rdfs:comment "The count of all the citation received by all the papers of a certain author." ;
-    rdfs:isDefinedBy <http://purl.org/spar/bido-standard-bibliometric-measures/> ;
-    ns4:term_status <http://purl.org/linked-data/registry#statusStable> .
+    rdfs:isDefinedBy <http://purl.org/spar/bido-standard-bibliometric-measures> ;
+    ns5:term_status <http://purl.org/linked-data/registry#statusStable> .
 

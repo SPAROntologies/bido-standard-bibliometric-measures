@@ -5,6 +5,6 @@
 time:Interval a owl:Class ;
     rdfs:label "time interval"@en ;
     rdfs:comment "A temporal entity with an extent or duration."@en ;
-    rdfs:isDefinedBy time: ;
+    rdfs:isDefinedBy <http://www.w3.org/2006/time> ;
     rdfs:subClassOf time:TemporalEntity .
 

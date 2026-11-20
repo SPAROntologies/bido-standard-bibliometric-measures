@@ -1,0 +1,20 @@
+_:ndae8a0d1943d45fca00f11643fe0614bb9 <http://www.w3.org/2002/07/owl#onProperty> _:ndae8a0d1943d45fca00f11643fe0614bb10 .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:ndae8a0d1943d45fca00f11643fe0614bb10 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:ndae8a0d1943d45fca00f11643fe0614bb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:ndae8a0d1943d45fca00f11643fe0614bb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:ndae8a0d1943d45fca00f11643fe0614bb11 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:ndae8a0d1943d45fca00f11643fe0614bb7 <http://www.w3.org/2002/07/owl#onProperty> _:ndae8a0d1943d45fca00f11643fe0614bb12 .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/2000/01/rdf-schema#comment> "An h-index complement, aimed at considering the contributions of excess citations, which are mainly from highly cited papers. It is necessary, especially for evaluating highly cited scientists or for precisely comparing the scientific output of a group of scientists having an identical h-index." .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+_:ndae8a0d1943d45fca00f11643fe0614bb8 <http://www.w3.org/2002/07/owl#allValuesFrom> _:ndae8a0d1943d45fca00f11643fe0614bb9 .
+<http://purl.org/spar/bido/e-index> <http://purl.org/vocab/vann/example> "\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:e-index ;\n        bido:hasNumericValue \"3\"^^xsd:integer .\n    " .
+_:ndae8a0d1943d45fca00f11643fe0614bb7 <http://www.w3.org/2002/07/owl#allValuesFrom> _:ndae8a0d1943d45fca00f11643fe0614bb8 .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:ndae8a0d1943d45fca00f11643fe0614bb7 .
+_:ndae8a0d1943d45fca00f11643fe0614bb8 <http://www.w3.org/2002/07/owl#onProperty> _:ndae8a0d1943d45fca00f11643fe0614bb11 .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/2000/01/rdf-schema#label> "e-index" .
+_:ndae8a0d1943d45fca00f11643fe0614bb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:ndae8a0d1943d45fca00f11643fe0614bb12 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+<http://purl.org/spar/bido/e-index> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-standard-bibliometric-measures> .
+_:ndae8a0d1943d45fca00f11643fe0614bb9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
