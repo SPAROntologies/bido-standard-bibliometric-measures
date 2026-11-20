@@ -8,4 +8,6 @@ on:
 
 jobs:
   validate:
+    permissions:
+      contents: write
     uses: SPAROntologies/sparontologies.github.io/.github/workflows/validation.yml@master
