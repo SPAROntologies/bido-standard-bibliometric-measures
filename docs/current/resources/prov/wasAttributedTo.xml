@@ -4,10 +4,10 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasAttributedTo">
-    <rdfs:label xml:lang="en">was attributed to</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:comment xml:lang="en">The relation between an entity ascribed to an agent and that agent.</rdfs:comment>
+    <rdfs:label xml:lang="en">was attributed to</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
   </rdf:Description>
 </rdf:RDF>

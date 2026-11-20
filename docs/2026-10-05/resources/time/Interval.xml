@@ -4,8 +4,8 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval">
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time#"/>
     <rdfs:label xml:lang="en">time interval</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/time#"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
     <rdfs:comment xml:lang="en">A temporal entity with an extent or duration.</rdfs:comment>
