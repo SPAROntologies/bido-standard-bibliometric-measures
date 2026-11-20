@@ -2,11 +2,11 @@
   {
     "@id": "http://purl.org/spar/bido/h-index",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/bido/BibliometricMeasure",
       {
-        "@id": "_:na33f427d47174a8182f83607fdca09b9b13"
-      }
+        "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb13"
+      },
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/BibliometricMeasure"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -20,7 +20,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/bido-standard-bibliometric-measures/"
+        "@id": "http://purl.org/spar/bido-standard-bibliometric-measures"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -35,39 +35,47 @@
     ]
   },
   {
-    "@id": "_:na33f427d47174a8182f83607fdca09b9b13",
+    "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb13",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "_:na33f427d47174a8182f83607fdca09b9b14"
+        "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb14"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "_:na33f427d47174a8182f83607fdca09b9b18"
+        "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb18"
       }
     ]
   },
   {
-    "@id": "_:na33f427d47174a8182f83607fdca09b9b14",
+    "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb18",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/hasMeasure"
+      }
+    ]
+  },
+  {
+    "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb14",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "_:na33f427d47174a8182f83607fdca09b9b15"
+        "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb15"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "_:na33f427d47174a8182f83607fdca09b9b17"
+        "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb17"
       }
     ]
   },
   {
-    "@id": "_:na33f427d47174a8182f83607fdca09b9b15",
+    "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb15",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -78,12 +86,12 @@
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "_:na33f427d47174a8182f83607fdca09b9b16"
+        "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb16"
       }
     ]
   },
   {
-    "@id": "_:na33f427d47174a8182f83607fdca09b9b16",
+    "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb16",
     "http://www.w3.org/2002/07/owl#inverseOf": [
       {
         "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
@@ -91,18 +99,10 @@
     ]
   },
   {
-    "@id": "_:na33f427d47174a8182f83607fdca09b9b17",
+    "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb17",
     "http://www.w3.org/2002/07/owl#inverseOf": [
       {
         "@id": "http://purl.org/spar/bido/withBibliometricData"
-      }
-    ]
-  },
-  {
-    "@id": "_:na33f427d47174a8182f83607fdca09b9b18",
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://purl.org/spar/bido/hasMeasure"
       }
     ]
   }

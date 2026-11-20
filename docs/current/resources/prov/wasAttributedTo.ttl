@@ -5,6 +5,6 @@
 prov:wasAttributedTo a owl:ObjectProperty ;
     rdfs:label "was attributed to"@en ;
     rdfs:comment "The relation between an entity ascribed to an agent and that agent."@en ;
-    rdfs:isDefinedBy prov: ;
+    rdfs:isDefinedBy <http://www.w3.org/ns/prov> ;
     rdfs:range prov:Agent .
 
