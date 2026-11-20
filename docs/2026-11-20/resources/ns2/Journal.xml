@@ -5,8 +5,8 @@
 >
   <rdf:Description rdf:about="http://purl.org/spar/fabio/Journal">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">journal</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio"/>
     <rdfs:comment xml:lang="en">A scholarly periodical primarily devoted to the publication of original research papers.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio"/>
+    <rdfs:label xml:lang="en">journal</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

@@ -6,42 +6,42 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:vann="http://purl.org/vocab/vann/"
 >
-  <rdf:Description rdf:nodeID="ndae8a0d1943d45fca00f11643fe0614bb15">
-    <owl:onProperty rdf:nodeID="ndae8a0d1943d45fca00f11643fe0614bb16"/>
+  <rdf:Description rdf:nodeID="nfc33154e64034fcd97d08aa2ed1bdb49b13">
+    <owl:allValuesFrom rdf:nodeID="nfc33154e64034fcd97d08aa2ed1bdb49b14"/>
+    <owl:onProperty rdf:nodeID="nfc33154e64034fcd97d08aa2ed1bdb49b18"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfc33154e64034fcd97d08aa2ed1bdb49b17">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfc33154e64034fcd97d08aa2ed1bdb49b14">
+    <owl:onProperty rdf:nodeID="nfc33154e64034fcd97d08aa2ed1bdb49b17"/>
+    <owl:allValuesFrom rdf:nodeID="nfc33154e64034fcd97d08aa2ed1bdb49b15"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfc33154e64034fcd97d08aa2ed1bdb49b15">
+    <owl:onProperty rdf:nodeID="nfc33154e64034fcd97d08aa2ed1bdb49b16"/>
     <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/bido/h-index">
-    <rdfs:comment>An index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist's most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal.</rdfs:comment>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:nodeID="nfc33154e64034fcd97d08aa2ed1bdb49b13"/>
+    <rdfs:label>h-index</rdfs:label>
     <ns5:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures"/>
     <vann:example>
     :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
         bido:hasMeasure bido:h-index ;
         bido:hasNumericValue "8"^^xsd:integer .
     </vann:example>
-    <rdf:type rdf:nodeID="ndae8a0d1943d45fca00f11643fe0614bb13"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures"/>
-    <rdfs:label>h-index</rdfs:label>
+    <rdfs:comment>An index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist's most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndae8a0d1943d45fca00f11643fe0614bb13">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:nodeID="ndae8a0d1943d45fca00f11643fe0614bb18"/>
-    <owl:allValuesFrom rdf:nodeID="ndae8a0d1943d45fca00f11643fe0614bb14"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndae8a0d1943d45fca00f11643fe0614bb16">
+  <rdf:Description rdf:nodeID="nfc33154e64034fcd97d08aa2ed1bdb49b16">
     <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndae8a0d1943d45fca00f11643fe0614bb14">
-    <owl:allValuesFrom rdf:nodeID="ndae8a0d1943d45fca00f11643fe0614bb15"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:nodeID="ndae8a0d1943d45fca00f11643fe0614bb17"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndae8a0d1943d45fca00f11643fe0614bb18">
+  <rdf:Description rdf:nodeID="nfc33154e64034fcd97d08aa2ed1bdb49b18">
     <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndae8a0d1943d45fca00f11643fe0614bb17">
-    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
   </rdf:Description>
 </rdf:RDF>
