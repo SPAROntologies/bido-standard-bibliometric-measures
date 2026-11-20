@@ -26,7 +26,7 @@ This module of BiDO describes a list of possible bibliometric measures that can 
 @prefix vann: &lt;http://purl.org/vocab/vann/> .
 
 &lt;http://purl.org/spar/bido-standard-bibliometric-measures> {
-    ns3:h-index a _:ndae8a0d1943d45fca00f11643fe0614bb13,
+    ns3:h-index a _:nfc33154e64034fcd97d08aa2ed1bdb49b13,
             ns3:BibliometricMeasure,
             owl:NamedIndividual ;
         rdfs:label "h-index" ;
@@ -39,23 +39,23 @@ This module of BiDO describes a list of possible bibliometric measures that can 
         rdfs:isDefinedBy &lt;http://purl.org/spar/bido-standard-bibliometric-measures> ;
         ns5:term_status &lt;http://purl.org/linked-data/registry#statusStable> .
 
-    _:ndae8a0d1943d45fca00f11643fe0614bb13 a owl:Restriction ;
-        owl:allValuesFrom _:ndae8a0d1943d45fca00f11643fe0614bb14 ;
-        owl:onProperty _:ndae8a0d1943d45fca00f11643fe0614bb18 .
+    _:nfc33154e64034fcd97d08aa2ed1bdb49b13 a owl:Restriction ;
+        owl:allValuesFrom _:nfc33154e64034fcd97d08aa2ed1bdb49b14 ;
+        owl:onProperty _:nfc33154e64034fcd97d08aa2ed1bdb49b18 .
 
-    _:ndae8a0d1943d45fca00f11643fe0614bb14 a owl:Restriction ;
-        owl:allValuesFrom _:ndae8a0d1943d45fca00f11643fe0614bb15 ;
-        owl:onProperty _:ndae8a0d1943d45fca00f11643fe0614bb17 .
+    _:nfc33154e64034fcd97d08aa2ed1bdb49b14 a owl:Restriction ;
+        owl:allValuesFrom _:nfc33154e64034fcd97d08aa2ed1bdb49b15 ;
+        owl:onProperty _:nfc33154e64034fcd97d08aa2ed1bdb49b17 .
 
-    _:ndae8a0d1943d45fca00f11643fe0614bb15 a owl:Restriction ;
+    _:nfc33154e64034fcd97d08aa2ed1bdb49b15 a owl:Restriction ;
         owl:allValuesFrom foaf:Person ;
-        owl:onProperty _:ndae8a0d1943d45fca00f11643fe0614bb16 .
+        owl:onProperty _:nfc33154e64034fcd97d08aa2ed1bdb49b16 .
 
-    _:ndae8a0d1943d45fca00f11643fe0614bb16 owl:inverseOf ns3:holdsBibliometricDataInTime .
+    _:nfc33154e64034fcd97d08aa2ed1bdb49b16 owl:inverseOf ns3:holdsBibliometricDataInTime .
 
-    _:ndae8a0d1943d45fca00f11643fe0614bb17 owl:inverseOf ns3:withBibliometricData .
+    _:nfc33154e64034fcd97d08aa2ed1bdb49b17 owl:inverseOf ns3:withBibliometricData .
 
-    _:ndae8a0d1943d45fca00f11643fe0614bb18 owl:inverseOf ns3:hasMeasure .
+    _:nfc33154e64034fcd97d08aa2ed1bdb49b18 owl:inverseOf ns3:hasMeasure .
 }
 
 </code></pre></div><div class="tab-pane fade" id=id_3ea73cba821c4b2f4a3c14544fde5514_Individual_prov_2 role=tabpanel><pre class="mb-0 small"><code>[
@@ -64,11 +64,11 @@ This module of BiDO describes a list of possible bibliometric measures that can 
       {
         "@id": "http://purl.org/spar/bido/h-index",
         "@type": [
-          {
-            "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb13"
-          },
+          "http://purl.org/spar/bido/BibliometricMeasure",
           "http://www.w3.org/2002/07/owl#NamedIndividual",
-          "http://purl.org/spar/bido/BibliometricMeasure"
+          {
+            "@id": "_:nfc33154e64034fcd97d08aa2ed1bdb49b13"
+          }
         ],
         "http://purl.org/vocab/vann/example": [
           {
@@ -97,47 +97,47 @@ This module of BiDO describes a list of possible bibliometric measures that can 
         ]
       },
       {
-        "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb13",
+        "@id": "_:nfc33154e64034fcd97d08aa2ed1bdb49b13",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
         "http://www.w3.org/2002/07/owl#allValuesFrom": [
           {
-            "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb14"
+            "@id": "_:nfc33154e64034fcd97d08aa2ed1bdb49b14"
           }
         ],
         "http://www.w3.org/2002/07/owl#onProperty": [
           {
-            "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb18"
+            "@id": "_:nfc33154e64034fcd97d08aa2ed1bdb49b18"
           }
         ]
       },
       {
-        "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb18",
+        "@id": "_:nfc33154e64034fcd97d08aa2ed1bdb49b14",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#allValuesFrom": [
+          {
+            "@id": "_:nfc33154e64034fcd97d08aa2ed1bdb49b15"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "_:nfc33154e64034fcd97d08aa2ed1bdb49b17"
+          }
+        ]
+      },
+      {
+        "@id": "_:nfc33154e64034fcd97d08aa2ed1bdb49b17",
         "http://www.w3.org/2002/07/owl#inverseOf": [
           {
-            "@id": "http://purl.org/spar/bido/hasMeasure"
+            "@id": "http://purl.org/spar/bido/withBibliometricData"
           }
         ]
       },
       {
-        "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb14",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#allValuesFrom": [
-          {
-            "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb15"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb17"
-          }
-        ]
-      },
-      {
-        "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb15",
+        "@id": "_:nfc33154e64034fcd97d08aa2ed1bdb49b15",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -148,12 +148,12 @@ This module of BiDO describes a list of possible bibliometric measures that can 
         ],
         "http://www.w3.org/2002/07/owl#onProperty": [
           {
-            "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb16"
+            "@id": "_:nfc33154e64034fcd97d08aa2ed1bdb49b16"
           }
         ]
       },
       {
-        "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb16",
+        "@id": "_:nfc33154e64034fcd97d08aa2ed1bdb49b16",
         "http://www.w3.org/2002/07/owl#inverseOf": [
           {
             "@id": "http://purl.org/spar/bido/holdsBibliometricDataInTime"
@@ -161,36 +161,36 @@ This module of BiDO describes a list of possible bibliometric measures that can 
         ]
       },
       {
-        "@id": "_:ndae8a0d1943d45fca00f11643fe0614bb17",
+        "@id": "_:nfc33154e64034fcd97d08aa2ed1bdb49b18",
         "http://www.w3.org/2002/07/owl#inverseOf": [
           {
-            "@id": "http://purl.org/spar/bido/withBibliometricData"
+            "@id": "http://purl.org/spar/bido/hasMeasure"
           }
         ]
       }
     ],
     "@id": "http://purl.org/spar/bido-standard-bibliometric-measures"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_3ea73cba821c4b2f4a3c14544fde5514_Individual_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:ndae8a0d1943d45fca00f11643fe0614bb15 &lt;http://www.w3.org/2002/07/owl#onProperty> _:ndae8a0d1943d45fca00f11643fe0614bb16 &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+]</code></pre></div><div class="tab-pane fade" id=id_3ea73cba821c4b2f4a3c14544fde5514_Individual_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:nfc33154e64034fcd97d08aa2ed1bdb49b13 &lt;http://www.w3.org/2002/07/owl#onProperty> _:nfc33154e64034fcd97d08aa2ed1bdb49b18 &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+_:nfc33154e64034fcd97d08aa2ed1bdb49b17 &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/spar/bido/withBibliometricData> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+_:nfc33154e64034fcd97d08aa2ed1bdb49b14 &lt;http://www.w3.org/2002/07/owl#onProperty> _:nfc33154e64034fcd97d08aa2ed1bdb49b17 &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+_:nfc33154e64034fcd97d08aa2ed1bdb49b15 &lt;http://www.w3.org/2002/07/owl#onProperty> _:nfc33154e64034fcd97d08aa2ed1bdb49b16 &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
 &lt;http://purl.org/spar/bido/h-index> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist's most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal." &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
-_:ndae8a0d1943d45fca00f11643fe0614bb13 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
-&lt;http://purl.org/spar/bido/h-index> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
-_:ndae8a0d1943d45fca00f11643fe0614bb15 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://xmlns.com/foaf/0.1/Person> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
-_:ndae8a0d1943d45fca00f11643fe0614bb16 &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/spar/bido/holdsBibliometricDataInTime> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
-_:ndae8a0d1943d45fca00f11643fe0614bb15 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
-_:ndae8a0d1943d45fca00f11643fe0614bb14 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> _:ndae8a0d1943d45fca00f11643fe0614bb15 &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
-&lt;http://purl.org/spar/bido/h-index> &lt;http://purl.org/vocab/vann/example> "\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:h-index ;\n        bido:hasNumericValue \"8\"^^xsd:integer .\n    " &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
-&lt;http://purl.org/spar/bido/h-index> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:ndae8a0d1943d45fca00f11643fe0614bb13 &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
-_:ndae8a0d1943d45fca00f11643fe0614bb18 &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/spar/bido/hasMeasure> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
-_:ndae8a0d1943d45fca00f11643fe0614bb17 &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/spar/bido/withBibliometricData> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
-_:ndae8a0d1943d45fca00f11643fe0614bb14 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
-&lt;http://purl.org/spar/bido/h-index> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#NamedIndividual> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
-_:ndae8a0d1943d45fca00f11643fe0614bb13 &lt;http://www.w3.org/2002/07/owl#onProperty> _:ndae8a0d1943d45fca00f11643fe0614bb18 &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+_:nfc33154e64034fcd97d08aa2ed1bdb49b16 &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/spar/bido/holdsBibliometricDataInTime> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+_:nfc33154e64034fcd97d08aa2ed1bdb49b13 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+_:nfc33154e64034fcd97d08aa2ed1bdb49b15 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://xmlns.com/foaf/0.1/Person> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+_:nfc33154e64034fcd97d08aa2ed1bdb49b14 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> _:nfc33154e64034fcd97d08aa2ed1bdb49b15 &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+_:nfc33154e64034fcd97d08aa2ed1bdb49b15 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
 &lt;http://purl.org/spar/bido/h-index> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://purl.org/spar/bido/BibliometricMeasure> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
-&lt;http://purl.org/spar/bido/h-index> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
-_:ndae8a0d1943d45fca00f11643fe0614bb14 &lt;http://www.w3.org/2002/07/owl#onProperty> _:ndae8a0d1943d45fca00f11643fe0614bb17 &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
 &lt;http://purl.org/spar/bido/h-index> &lt;http://www.w3.org/2000/01/rdf-schema#label> "h-index" &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
-_:ndae8a0d1943d45fca00f11643fe0614bb13 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> _:ndae8a0d1943d45fca00f11643fe0614bb14 &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+_:nfc33154e64034fcd97d08aa2ed1bdb49b14 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+_:nfc33154e64034fcd97d08aa2ed1bdb49b18 &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/spar/bido/hasMeasure> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+&lt;http://purl.org/spar/bido/h-index> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+&lt;http://purl.org/spar/bido/h-index> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+&lt;http://purl.org/spar/bido/h-index> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#NamedIndividual> &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+&lt;http://purl.org/spar/bido/h-index> &lt;http://purl.org/vocab/vann/example> "\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:h-index ;\n        bido:hasNumericValue \"8\"^^xsd:integer .\n    " &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+_:nfc33154e64034fcd97d08aa2ed1bdb49b13 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> _:nfc33154e64034fcd97d08aa2ed1bdb49b14 &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
+&lt;http://purl.org/spar/bido/h-index> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:nfc33154e64034fcd97d08aa2ed1bdb49b13 &lt;http://purl.org/spar/bido-standard-bibliometric-measures> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../bido-standard-bibliometric-measures.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 
